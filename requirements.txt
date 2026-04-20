@@ -1,0 +1,8 @@
+torch>=2.0
+transformer-lens
+datasets
+scikit-learn
+numpy
+matplotlib
+seaborn
+tqdm
