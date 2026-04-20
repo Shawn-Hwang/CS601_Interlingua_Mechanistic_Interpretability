@@ -11,7 +11,7 @@ from pathlib import Path
 # ── Model ────────────────────────────────────────────────────────────────────
 # Change this to swap models (must be supported by TransformerLens).
 # Examples: "gemma-2-2b", "Qwen/Qwen1.5-1.8B", "meta-llama/Llama-2-7b-hf"
-MODEL_NAME: str = "gemma-2-2b"
+MODEL_NAME: str = "gemma-3-1b-it"
 
 DEVICE: str = (
     "cuda" if torch.cuda.is_available()
@@ -29,17 +29,17 @@ FLORES_CONFIGS: dict[str, str] = {
 FLORES_SPLIT: str = "dev"  # 997 sentences; devtest reserved for validation
 
 # ── Phase 1: Direction extraction ────────────────────────────────────────────
-N_SAMPLES_DIRECTION: int = 200       # number of sentence pairs to use
+N_SAMPLES_DIRECTION: int = 10       # number of sentence pairs to use
 BATCH_SIZE: int = 8                  # batch size for activation extraction
 
 # ── Phase 2: Reasoning dataset ───────────────────────────────────────────────
-N_EXAMPLES_PER_TASK: int = 50
+N_EXAMPLES_PER_TASK: int = 5
 CANDIDATE_MULTIPLIER: int = 3        # generate 3x candidates to hit target after filtering
 BASELINE_ACCURACY_THRESHOLD: float = 0.75
 MAX_NEW_TOKENS: int = 32             # max tokens to generate for evaluation
 
 # ── Phase 3: Ablation ───────────────────────────────────────────────────────
-N_RANDOM_DIRECTIONS: int = 10        # number of random control directions to average
+N_RANDOM_DIRECTIONS: int = 2        # number of random control directions to average
 DIRECTION_METHOD: str = "mean_diff"  # primary method: "mean_diff" or "logreg"
 
 # ── Paths ────────────────────────────────────────────────────────────────────
