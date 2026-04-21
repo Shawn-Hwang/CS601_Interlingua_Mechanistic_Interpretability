@@ -50,7 +50,7 @@ def plot_english_activation_colormap(
     Color: projection magnitude onto English direction (diverging colormap)
     """
     tokens = model.to_tokens(prompt, prepend_bos=True)
-    str_tokens = model.to_str_tokens(prompt, prepend_bos=True)
+    str_tokens = model.to_str_tokens(tokens[0])
     n_layers = len(directions)
     seq_len = tokens.shape[1]
 
