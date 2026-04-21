@@ -1,0 +1,402 @@
+[
+  {
+    "prompt_en": "Isabel is faster than Lucia. Who is faster? Answer with just the name.",
+    "prompt_es": "Isabel es mas rapido que Lucia. Quien es mas rapido? Responde solo con el nombre.",
+    "answer_en": "Isabel",
+    "answer_es": "Isabel",
+    "task_type": "relational",
+    "id": 0
+  },
+  {
+    "prompt_en": "If Pedro is taller than Isabel, and Isabel is taller than Maria, who is the least tall? Answer with just the name.",
+    "prompt_es": "Si Pedro es mas alto que Isabel, y Isabel es mas alto que Maria, quien es el/la menos alto? Responde solo con el nombre.",
+    "answer_en": "Maria",
+    "answer_es": "Maria",
+    "task_type": "relational",
+    "id": 1
+  },
+  {
+    "prompt_en": "If Juan is older than Carmen, and Carmen is older than Isabel, who is the least old? Answer with just the name.",
+    "prompt_es": "Si Juan es mayor que Carmen, y Carmen es mayor que Isabel, quien es el/la menos mayor? Responde solo con el nombre.",
+    "answer_en": "Isabel",
+    "answer_es": "Isabel",
+    "task_type": "relational",
+    "id": 2
+  },
+  {
+    "prompt_en": "If Carlos is taller than Andres, and Andres is taller than Maria, who is the least tall? Answer with just the name.",
+    "prompt_es": "Si Carlos es mas alto que Andres, y Andres es mas alto que Maria, quien es el/la menos alto? Responde solo con el nombre.",
+    "answer_en": "Maria",
+    "answer_es": "Maria",
+    "task_type": "relational",
+    "id": 3
+  },
+  {
+    "prompt_en": "Roberto is older than Elena. Who is older? Answer with just the name.",
+    "prompt_es": "Roberto es mayor que Elena. Quien es mayor? Responde solo con el nombre.",
+    "answer_en": "Roberto",
+    "answer_es": "Roberto",
+    "task_type": "relational",
+    "id": 4
+  },
+  {
+    "prompt_en": "If Sofia is taller than Juan, and Juan is taller than Pablo, who is the least tall? Answer with just the name.",
+    "prompt_es": "Si Sofia es mas alto que Juan, y Juan es mas alto que Pablo, quien es el/la menos alto? Responde solo con el nombre.",
+    "answer_en": "Pablo",
+    "answer_es": "Pablo",
+    "task_type": "relational",
+    "id": 5
+  },
+  {
+    "prompt_en": "If Marta is faster than Isabel, and Isabel is faster than Luis, who is the least fast? Answer with just the name.",
+    "prompt_es": "Si Marta es mas rapido que Isabel, y Isabel es mas rapido que Luis, quien es el/la menos rapido? Responde solo con el nombre.",
+    "answer_en": "Luis",
+    "answer_es": "Luis",
+    "task_type": "relational",
+    "id": 6
+  },
+  {
+    "prompt_en": "Sofia is older than Ana. Who is older? Answer with just the name.",
+    "prompt_es": "Sofia es mayor que Ana. Quien es mayor? Responde solo con el nombre.",
+    "answer_en": "Sofia",
+    "answer_es": "Sofia",
+    "task_type": "relational",
+    "id": 7
+  },
+  {
+    "prompt_en": "Carmen is taller than Isabel. Who is taller? Answer with just the name.",
+    "prompt_es": "Carmen es mas alto que Isabel. Quien es mas alto? Responde solo con el nombre.",
+    "answer_en": "Carmen",
+    "answer_es": "Carmen",
+    "task_type": "relational",
+    "id": 8
+  },
+  {
+    "prompt_en": "If Rosa is taller than Laura, and Laura is taller than Andres, who is the least tall? Answer with just the name.",
+    "prompt_es": "Si Rosa es mas alto que Laura, y Laura es mas alto que Andres, quien es el/la menos alto? Responde solo con el nombre.",
+    "answer_en": "Andres",
+    "answer_es": "Andres",
+    "task_type": "relational",
+    "id": 9
+  },
+  {
+    "prompt_en": "If Lucia is taller than Andres, and Andres is taller than Fernando, who is the least tall? Answer with just the name.",
+    "prompt_es": "Si Lucia es mas alto que Andres, y Andres es mas alto que Fernando, quien es el/la menos alto? Responde solo con el nombre.",
+    "answer_en": "Fernando",
+    "answer_es": "Fernando",
+    "task_type": "relational",
+    "id": 10
+  },
+  {
+    "prompt_en": "Laura is faster than Fernando. Who is faster? Answer with just the name.",
+    "prompt_es": "Laura es mas rapido que Fernando. Quien es mas rapido? Responde solo con el nombre.",
+    "answer_en": "Laura",
+    "answer_es": "Laura",
+    "task_type": "relational",
+    "id": 11
+  },
+  {
+    "prompt_en": "Pedro is faster than Lucia. Who is faster? Answer with just the name.",
+    "prompt_es": "Pedro es mas rapido que Lucia. Quien es mas rapido? Responde solo con el nombre.",
+    "answer_en": "Pedro",
+    "answer_es": "Pedro",
+    "task_type": "relational",
+    "id": 12
+  },
+  {
+    "prompt_en": "Carlos is faster than Marta. Who is faster? Answer with just the name.",
+    "prompt_es": "Carlos es mas rapido que Marta. Quien es mas rapido? Responde solo con el nombre.",
+    "answer_en": "Carlos",
+    "answer_es": "Carlos",
+    "task_type": "relational",
+    "id": 13
+  },
+  {
+    "prompt_en": "If Carmen is taller than Pedro, and Pedro is taller than Elena, who is the least tall? Answer with just the name.",
+    "prompt_es": "Si Carmen es mas alto que Pedro, y Pedro es mas alto que Elena, quien es el/la menos alto? Responde solo con el nombre.",
+    "answer_en": "Elena",
+    "answer_es": "Elena",
+    "task_type": "relational",
+    "id": 14
+  },
+  {
+    "prompt_en": "If Pedro is taller than Lucia, and Lucia is taller than Rosa, who is the least tall? Answer with just the name.",
+    "prompt_es": "Si Pedro es mas alto que Lucia, y Lucia es mas alto que Rosa, quien es el/la menos alto? Responde solo con el nombre.",
+    "answer_en": "Rosa",
+    "answer_es": "Rosa",
+    "task_type": "relational",
+    "id": 15
+  },
+  {
+    "prompt_en": "If Sofia is taller than Carmen, and Carmen is taller than Ana, who is the least tall? Answer with just the name.",
+    "prompt_es": "Si Sofia es mas alto que Carmen, y Carmen es mas alto que Ana, quien es el/la menos alto? Responde solo con el nombre.",
+    "answer_en": "Ana",
+    "answer_es": "Ana",
+    "task_type": "relational",
+    "id": 16
+  },
+  {
+    "prompt_en": "If Rosa is faster than Ana, and Ana is faster than Juan, who is the least fast? Answer with just the name.",
+    "prompt_es": "Si Rosa es mas rapido que Ana, y Ana es mas rapido que Juan, quien es el/la menos rapido? Responde solo con el nombre.",
+    "answer_en": "Juan",
+    "answer_es": "Juan",
+    "task_type": "relational",
+    "id": 17
+  },
+  {
+    "prompt_en": "Roberto is taller than Carlos. Who is taller? Answer with just the name.",
+    "prompt_es": "Roberto es mas alto que Carlos. Quien es mas alto? Responde solo con el nombre.",
+    "answer_en": "Roberto",
+    "answer_es": "Roberto",
+    "task_type": "relational",
+    "id": 18
+  },
+  {
+    "prompt_en": "Diego is older than Maria. Who is older? Answer with just the name.",
+    "prompt_es": "Diego es mayor que Maria. Quien es mayor? Responde solo con el nombre.",
+    "answer_en": "Diego",
+    "answer_es": "Diego",
+    "task_type": "relational",
+    "id": 19
+  },
+  {
+    "prompt_en": "Ana is older than Pablo. Who is older? Answer with just the name.",
+    "prompt_es": "Ana es mayor que Pablo. Quien es mayor? Responde solo con el nombre.",
+    "answer_en": "Ana",
+    "answer_es": "Ana",
+    "task_type": "relational",
+    "id": 20
+  },
+  {
+    "prompt_en": "Sofia is taller than Rosa. Who is taller? Answer with just the name.",
+    "prompt_es": "Sofia es mas alto que Rosa. Quien es mas alto? Responde solo con el nombre.",
+    "answer_en": "Sofia",
+    "answer_es": "Sofia",
+    "task_type": "relational",
+    "id": 21
+  },
+  {
+    "prompt_en": "Miguel is faster than Rosa. Who is faster? Answer with just the name.",
+    "prompt_es": "Miguel es mas rapido que Rosa. Quien es mas rapido? Responde solo con el nombre.",
+    "answer_en": "Miguel",
+    "answer_es": "Miguel",
+    "task_type": "relational",
+    "id": 22
+  },
+  {
+    "prompt_en": "If Lucia is older than Elena, and Elena is older than Luis, who is the least old? Answer with just the name.",
+    "prompt_es": "Si Lucia es mayor que Elena, y Elena es mayor que Luis, quien es el/la menos mayor? Responde solo con el nombre.",
+    "answer_en": "Luis",
+    "answer_es": "Luis",
+    "task_type": "relational",
+    "id": 23
+  },
+  {
+    "prompt_en": "Elena is faster than Lucia. Who is faster? Answer with just the name.",
+    "prompt_es": "Elena es mas rapido que Lucia. Quien es mas rapido? Responde solo con el nombre.",
+    "answer_en": "Elena",
+    "answer_es": "Elena",
+    "task_type": "relational",
+    "id": 24
+  },
+  {
+    "prompt_en": "Laura is older than Pablo. Who is older? Answer with just the name.",
+    "prompt_es": "Laura es mayor que Pablo. Quien es mayor? Responde solo con el nombre.",
+    "answer_en": "Laura",
+    "answer_es": "Laura",
+    "task_type": "relational",
+    "id": 25
+  },
+  {
+    "prompt_en": "Lucia is taller than Juan. Who is taller? Answer with just the name.",
+    "prompt_es": "Lucia es mas alto que Juan. Quien es mas alto? Responde solo con el nombre.",
+    "answer_en": "Lucia",
+    "answer_es": "Lucia",
+    "task_type": "relational",
+    "id": 26
+  },
+  {
+    "prompt_en": "Miguel is faster than Carmen. Who is faster? Answer with just the name.",
+    "prompt_es": "Miguel es mas rapido que Carmen. Quien es mas rapido? Responde solo con el nombre.",
+    "answer_en": "Miguel",
+    "answer_es": "Miguel",
+    "task_type": "relational",
+    "id": 27
+  },
+  {
+    "prompt_en": "Lucia is taller than Roberto. Who is taller? Answer with just the name.",
+    "prompt_es": "Lucia es mas alto que Roberto. Quien es mas alto? Responde solo con el nombre.",
+    "answer_en": "Lucia",
+    "answer_es": "Lucia",
+    "task_type": "relational",
+    "id": 28
+  },
+  {
+    "prompt_en": "Laura is taller than Juan. Who is taller? Answer with just the name.",
+    "prompt_es": "Laura es mas alto que Juan. Quien es mas alto? Responde solo con el nombre.",
+    "answer_en": "Laura",
+    "answer_es": "Laura",
+    "task_type": "relational",
+    "id": 29
+  },
+  {
+    "prompt_en": "Fernando is older than Pablo. Who is older? Answer with just the name.",
+    "prompt_es": "Fernando es mayor que Pablo. Quien es mayor? Responde solo con el nombre.",
+    "answer_en": "Fernando",
+    "answer_es": "Fernando",
+    "task_type": "relational",
+    "id": 30
+  },
+  {
+    "prompt_en": "Isabel is older than Roberto. Who is older? Answer with just the name.",
+    "prompt_es": "Isabel es mayor que Roberto. Quien es mayor? Responde solo con el nombre.",
+    "answer_en": "Isabel",
+    "answer_es": "Isabel",
+    "task_type": "relational",
+    "id": 31
+  },
+  {
+    "prompt_en": "Pablo is older than Roberto. Who is older? Answer with just the name.",
+    "prompt_es": "Pablo es mayor que Roberto. Quien es mayor? Responde solo con el nombre.",
+    "answer_en": "Pablo",
+    "answer_es": "Pablo",
+    "task_type": "relational",
+    "id": 32
+  },
+  {
+    "prompt_en": "If Diego is faster than Rosa, and Rosa is faster than Elena, who is the least fast? Answer with just the name.",
+    "prompt_es": "Si Diego es mas rapido que Rosa, y Rosa es mas rapido que Elena, quien es el/la menos rapido? Responde solo con el nombre.",
+    "answer_en": "Elena",
+    "answer_es": "Elena",
+    "task_type": "relational",
+    "id": 33
+  },
+  {
+    "prompt_en": "If Andres is older than Luis, and Luis is older than Pedro, who is the least old? Answer with just the name.",
+    "prompt_es": "Si Andres es mayor que Luis, y Luis es mayor que Pedro, quien es el/la menos mayor? Responde solo con el nombre.",
+    "answer_en": "Pedro",
+    "answer_es": "Pedro",
+    "task_type": "relational",
+    "id": 34
+  },
+  {
+    "prompt_en": "Elena is faster than Diego. Who is faster? Answer with just the name.",
+    "prompt_es": "Elena es mas rapido que Diego. Quien es mas rapido? Responde solo con el nombre.",
+    "answer_en": "Elena",
+    "answer_es": "Elena",
+    "task_type": "relational",
+    "id": 35
+  },
+  {
+    "prompt_en": "If Miguel is taller than Pablo, and Pablo is taller than Diego, who is the least tall? Answer with just the name.",
+    "prompt_es": "Si Miguel es mas alto que Pablo, y Pablo es mas alto que Diego, quien es el/la menos alto? Responde solo con el nombre.",
+    "answer_en": "Diego",
+    "answer_es": "Diego",
+    "task_type": "relational",
+    "id": 36
+  },
+  {
+    "prompt_en": "Miguel is taller than Juan. Who is taller? Answer with just the name.",
+    "prompt_es": "Miguel es mas alto que Juan. Quien es mas alto? Responde solo con el nombre.",
+    "answer_en": "Miguel",
+    "answer_es": "Miguel",
+    "task_type": "relational",
+    "id": 37
+  },
+  {
+    "prompt_en": "Roberto is older than Lucia. Who is older? Answer with just the name.",
+    "prompt_es": "Roberto es mayor que Lucia. Quien es mayor? Responde solo con el nombre.",
+    "answer_en": "Roberto",
+    "answer_es": "Roberto",
+    "task_type": "relational",
+    "id": 38
+  },
+  {
+    "prompt_en": "Juan is older than Luis. Who is older? Answer with just the name.",
+    "prompt_es": "Juan es mayor que Luis. Quien es mayor? Responde solo con el nombre.",
+    "answer_en": "Juan",
+    "answer_es": "Juan",
+    "task_type": "relational",
+    "id": 39
+  },
+  {
+    "prompt_en": "If Ana is taller than Roberto, and Roberto is taller than Juan, who is the least tall? Answer with just the name.",
+    "prompt_es": "Si Ana es mas alto que Roberto, y Roberto es mas alto que Juan, quien es el/la menos alto? Responde solo con el nombre.",
+    "answer_en": "Juan",
+    "answer_es": "Juan",
+    "task_type": "relational",
+    "id": 40
+  },
+  {
+    "prompt_en": "Roberto is older than Maria. Who is older? Answer with just the name.",
+    "prompt_es": "Roberto es mayor que Maria. Quien es mayor? Responde solo con el nombre.",
+    "answer_en": "Roberto",
+    "answer_es": "Roberto",
+    "task_type": "relational",
+    "id": 41
+  },
+  {
+    "prompt_en": "If Rosa is older than Luis, and Luis is older than Isabel, who is the least old? Answer with just the name.",
+    "prompt_es": "Si Rosa es mayor que Luis, y Luis es mayor que Isabel, quien es el/la menos mayor? Responde solo con el nombre.",
+    "answer_en": "Isabel",
+    "answer_es": "Isabel",
+    "task_type": "relational",
+    "id": 42
+  },
+  {
+    "prompt_en": "If Laura is older than Carmen, and Carmen is older than Sofia, who is the least old? Answer with just the name.",
+    "prompt_es": "Si Laura es mayor que Carmen, y Carmen es mayor que Sofia, quien es el/la menos mayor? Responde solo con el nombre.",
+    "answer_en": "Sofia",
+    "answer_es": "Sofia",
+    "task_type": "relational",
+    "id": 43
+  },
+  {
+    "prompt_en": "Lucia is taller than Juan. Who is taller? Answer with just the name.",
+    "prompt_es": "Lucia es mas alto que Juan. Quien es mas alto? Responde solo con el nombre.",
+    "answer_en": "Lucia",
+    "answer_es": "Lucia",
+    "task_type": "relational",
+    "id": 44
+  },
+  {
+    "prompt_en": "If Lucia is taller than Carmen, and Carmen is taller than Luis, who is the least tall? Answer with just the name.",
+    "prompt_es": "Si Lucia es mas alto que Carmen, y Carmen es mas alto que Luis, quien es el/la menos alto? Responde solo con el nombre.",
+    "answer_en": "Luis",
+    "answer_es": "Luis",
+    "task_type": "relational",
+    "id": 45
+  },
+  {
+    "prompt_en": "Sofia is faster than Laura. Who is faster? Answer with just the name.",
+    "prompt_es": "Sofia es mas rapido que Laura. Quien es mas rapido? Responde solo con el nombre.",
+    "answer_en": "Sofia",
+    "answer_es": "Sofia",
+    "task_type": "relational",
+    "id": 46
+  },
+  {
+    "prompt_en": "If Juan is taller than Ana, and Ana is taller than Diego, who is the least tall? Answer with just the name.",
+    "prompt_es": "Si Juan es mas alto que Ana, y Ana es mas alto que Diego, quien es el/la menos alto? Responde solo con el nombre.",
+    "answer_en": "Diego",
+    "answer_es": "Diego",
+    "task_type": "relational",
+    "id": 47
+  },
+  {
+    "prompt_en": "Lucia is taller than Juan. Who is taller? Answer with just the name.",
+    "prompt_es": "Lucia es mas alto que Juan. Quien es mas alto? Responde solo con el nombre.",
+    "answer_en": "Lucia",
+    "answer_es": "Lucia",
+    "task_type": "relational",
+    "id": 48
+  },
+  {
+    "prompt_en": "Carlos is taller than Juan. Who is taller? Answer with just the name.",
+    "prompt_es": "Carlos es mas alto que Juan. Quien es mas alto? Responde solo con el nombre.",
+    "answer_en": "Carlos",
+    "answer_es": "Carlos",
+    "task_type": "relational",
+    "id": 49
+  }
+]

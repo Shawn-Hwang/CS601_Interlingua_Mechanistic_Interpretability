@@ -1,0 +1,51 @@
+[
+  {
+    "condition": "en_ablated_es",
+    "n_correct": 4,
+    "n_total": 5,
+    "accuracy": 0.8,
+    "task_type": "pattern_completion",
+    "layer": 1
+  },
+  {
+    "condition": "en_ablated_en",
+    "n_correct": 5,
+    "n_total": 5,
+    "accuracy": 1.0,
+    "task_type": "pattern_completion",
+    "layer": 1
+  },
+  {
+    "condition": "random_ablated_es",
+    "task_type": "pattern_completion",
+    "layer": 1,
+    "accuracy": 0.4,
+    "accuracy_std": 0.0,
+    "n_correct": -1,
+    "n_total": 5
+  },
+  {
+    "condition": "baseline_es",
+    "n_correct": 5,
+    "n_total": 5,
+    "accuracy": 1.0,
+    "task_type": "pattern_completion",
+    "layer": 1
+  },
+  {
+    "condition": "baseline_en",
+    "n_correct": 5,
+    "n_total": 5,
+    "accuracy": 1.0,
+    "task_type": "pattern_completion",
+    "layer": 1
+  },
+  {
+    "condition": "high_var_ablated_es",
+    "n_correct": 0,
+    "n_total": 5,
+    "accuracy": 0.0,
+    "task_type": "pattern_completion",
+    "layer": 1
+  }
+]

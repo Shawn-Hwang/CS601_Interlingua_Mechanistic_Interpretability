@@ -1,0 +1,132 @@
+{
+  "0": {
+    "mean_diff": 0.672,
+    "logreg": 0.844,
+    "pca": 0.52
+  },
+  "1": {
+    "mean_diff": 0.544,
+    "logreg": 0.86,
+    "pca": 0.492
+  },
+  "2": {
+    "mean_diff": 0.532,
+    "logreg": 0.856,
+    "pca": 0.496
+  },
+  "3": {
+    "mean_diff": 0.532,
+    "logreg": 0.872,
+    "pca": 0.508
+  },
+  "4": {
+    "mean_diff": 0.528,
+    "logreg": 0.844,
+    "pca": 0.536
+  },
+  "5": {
+    "mean_diff": 0.528,
+    "logreg": 0.824,
+    "pca": 0.552
+  },
+  "6": {
+    "mean_diff": 0.588,
+    "logreg": 0.772,
+    "pca": 0.58
+  },
+  "7": {
+    "mean_diff": 0.612,
+    "logreg": 0.696,
+    "pca": 0.604
+  },
+  "8": {
+    "mean_diff": 0.536,
+    "logreg": 0.692,
+    "pca": 0.528
+  },
+  "9": {
+    "mean_diff": 0.544,
+    "logreg": 0.676,
+    "pca": 0.544
+  },
+  "10": {
+    "mean_diff": 0.548,
+    "logreg": 0.68,
+    "pca": 0.54
+  },
+  "11": {
+    "mean_diff": 0.568,
+    "logreg": 0.74,
+    "pca": 0.552
+  },
+  "12": {
+    "mean_diff": 0.56,
+    "logreg": 0.74,
+    "pca": 0.564
+  },
+  "13": {
+    "mean_diff": 0.58,
+    "logreg": 0.764,
+    "pca": 0.568
+  },
+  "14": {
+    "mean_diff": 0.592,
+    "logreg": 0.724,
+    "pca": 0.58
+  },
+  "15": {
+    "mean_diff": 0.584,
+    "logreg": 0.78,
+    "pca": 0.564
+  },
+  "16": {
+    "mean_diff": 0.564,
+    "logreg": 0.836,
+    "pca": 0.564
+  },
+  "17": {
+    "mean_diff": 0.564,
+    "logreg": 0.864,
+    "pca": 0.54
+  },
+  "18": {
+    "mean_diff": 0.588,
+    "logreg": 0.86,
+    "pca": 0.54
+  },
+  "19": {
+    "mean_diff": 0.56,
+    "logreg": 0.872,
+    "pca": 0.528
+  },
+  "20": {
+    "mean_diff": 0.544,
+    "logreg": 0.884,
+    "pca": 0.524
+  },
+  "21": {
+    "mean_diff": 0.56,
+    "logreg": 0.884,
+    "pca": 0.516
+  },
+  "22": {
+    "mean_diff": 0.56,
+    "logreg": 0.888,
+    "pca": 0.504
+  },
+  "23": {
+    "mean_diff": 0.572,
+    "logreg": 0.884,
+    "pca": 0.504
+  },
+  "24": {
+    "mean_diff": 0.568,
+    "logreg": 0.88,
+    "pca": 0.516
+  },
+  "25": {
+    "mean_diff": 0.848,
+    "logreg": 0.868,
+    "pca": 0.488
+  }
+}

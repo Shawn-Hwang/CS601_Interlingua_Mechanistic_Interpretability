@@ -1,0 +1,51 @@
+[
+  {
+    "condition": "en_ablated_es",
+    "n_correct": 1,
+    "n_total": 10,
+    "accuracy": 0.1,
+    "task_type": "relational",
+    "layer": 3
+  },
+  {
+    "condition": "en_ablated_en",
+    "n_correct": 2,
+    "n_total": 10,
+    "accuracy": 0.2,
+    "task_type": "relational",
+    "layer": 3
+  },
+  {
+    "condition": "random_ablated_es",
+    "task_type": "relational",
+    "layer": 3,
+    "accuracy": 1.0,
+    "accuracy_std": 0.0,
+    "n_correct": -1,
+    "n_total": 10
+  },
+  {
+    "condition": "baseline_es",
+    "n_correct": 10,
+    "n_total": 10,
+    "accuracy": 1.0,
+    "task_type": "relational",
+    "layer": 3
+  },
+  {
+    "condition": "baseline_en",
+    "n_correct": 10,
+    "n_total": 10,
+    "accuracy": 1.0,
+    "task_type": "relational",
+    "layer": 3
+  },
+  {
+    "condition": "high_var_ablated_es",
+    "n_correct": 0,
+    "n_total": 10,
+    "accuracy": 0.0,
+    "task_type": "relational",
+    "layer": 3
+  }
+]

@@ -117,8 +117,9 @@ def run_condition(
     """
     n_correct = 0
     n_total = len(examples)
-
-    for ex in examples:
+    
+    print("Iterating thru examples...")
+    for ex in tqdm(examples):
         correct, _ = utils.evaluate_completion(
             model, ex[prompt_key], ex[answer_key], fwd_hooks=fwd_hooks
         )
@@ -152,12 +153,15 @@ def run_ablation_experiment(
     # Pre-generate random directions (shared across layers and examples)
     random_dirs = [utils.random_direction(d_model) for _ in range(config.N_RANDOM_DIRECTIONS)]
 
-    for layer in tqdm(range(n_layers), desc=f"Ablation [{task_type}]"):
+    print(f'Ablation [{task_type}]')
+    for layer in range(n_layers):
+        print(f"Running layer {layer}")
         d_hat = directions[layer]
         mu = mean_projections[layer]
         hook_name = f"blocks.{layer}.hook_resid_post"
 
         # Condition (a): English direction ablated + Spanish reasoning
+        print(f"Running condition (a)...")
         ablation_hook = utils.make_ablation_hook(d_hat, mu)
         result_a = run_condition(
             model, examples, "prompt_es", "answer_es",
@@ -168,6 +172,7 @@ def run_ablation_experiment(
         results.append(result_a)
 
         # Condition (b): English direction ablated + English reasoning
+        print(f"Running condition (b)...")
         result_b = run_condition(
             model, examples, "prompt_en", "answer_en",
             fwd_hooks=[(hook_name, ablation_hook)],
@@ -178,6 +183,7 @@ def run_ablation_experiment(
 
         # Condition (c): Random direction ablated + Spanish reasoning
         # Average accuracy over N_RANDOM_DIRECTIONS random directions
+        print(f"Running condition (c)...")
         random_accuracies = []
         for rd in random_dirs:
             rand_hook = utils.make_ablation_hook(rd, 0.0)
@@ -200,6 +206,7 @@ def run_ablation_experiment(
         results.append(result_c)
 
         # Condition (d): No ablation — baseline
+        print(f"Running condition (d)...")
         result_d = run_condition(
             model, examples, "prompt_es", "answer_es",
             fwd_hooks=None,
@@ -217,6 +224,7 @@ def run_ablation_experiment(
         results.append(result_d_en)
 
         # Additional control: high-variance non-English-aligned direction
+        print(f"Running condition (f)...")
         hv_dir = compute_high_variance_direction(
             model, reference_texts, d_hat, layer
         )
@@ -229,6 +237,11 @@ def run_ablation_experiment(
         result_hv.update({"task_type": task_type, "layer": layer})
         results.append(result_hv)
 
+        layer_path = config.ABLATION_DIR / f"ablation_{task_type}_L{layer}.json"
+        layer_results = [r for r in results if r["layer"] == layer]
+        with open(layer_path, "w") as f:
+            json.dump(layer_results, f, indent=2)
+
     return results
 
 
@@ -240,7 +253,8 @@ def main():
     directions = load_directions("es")
 
     all_results = []
-    task_types = ["relational", "factual_inference", "pattern_completion"]
+    # task_types = ["relational", "factual_inference", "pattern_completion"]
+    task_types = ["pattern_completion"]
 
     for task_type in task_types:
         print(f"\n{'='*60}")
@@ -248,6 +262,9 @@ def main():
         print(f"{'='*60}")
 
         examples = load_reasoning_dataset(task_type)
+
+        # Doing only 10 examples per task
+        examples = examples[:10]
 
         # Compute mean projections using Spanish prompts as reference
         es_texts = [ex["prompt_es"] for ex in examples]

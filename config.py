@@ -42,7 +42,7 @@ BASELINE_ACCURACY_THRESHOLD: float = 0.75
 MAX_NEW_TOKENS: int = 32             # max tokens to generate for evaluation
 
 # ── Phase 3: Ablation ───────────────────────────────────────────────────────
-N_RANDOM_DIRECTIONS: int = 10        # number of random control directions to average
+N_RANDOM_DIRECTIONS: int = 1       # number of random control directions to average
 DIRECTION_METHOD: str = "mean_diff"  # primary method: "mean_diff", "logreg", or "pca"
 
 # ── Paths ────────────────────────────────────────────────────────────────────

@@ -1,0 +1,402 @@
+[
+  {
+    "prompt_en": "All of Elena's fishs are gray. Elena has a fish named Carlos. What color is Carlos? Answer with just the color.",
+    "prompt_es": "Todos los pezs de Elena son gris. Elena tiene un pez llamado Carlos. De que color es Carlos? Responde solo con el color.",
+    "answer_en": "gray",
+    "answer_es": "gris",
+    "task_type": "factual_inference",
+    "id": 0
+  },
+  {
+    "prompt_en": "All of Carmen's cats are white. Carmen has a cat named Rosa. What color is Rosa? Answer with just the color.",
+    "prompt_es": "Todos los gatos de Carmen son blanco. Carmen tiene un gato llamado Rosa. De que color es Rosa? Responde solo con el color.",
+    "answer_en": "white",
+    "answer_es": "blanco",
+    "task_type": "factual_inference",
+    "id": 1
+  },
+  {
+    "prompt_en": "Everyone in Isabel's family speaks Spanish. Isabel is in the family. Does Isabel speak Spanish? Answer yes or no.",
+    "prompt_es": "Todos en la familia de Isabel hablan espanol. Isabel esta en la familia. Habla Isabel espanol? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 2
+  },
+  {
+    "prompt_en": "Everyone in Pablo's family speaks Spanish. Pablo is in the family. Does Pablo speak Spanish? Answer yes or no.",
+    "prompt_es": "Todos en la familia de Pablo hablan espanol. Pablo esta en la familia. Habla Pablo espanol? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 3
+  },
+  {
+    "prompt_en": "If it rains, Carlos takes an umbrella. It is raining. Does Carlos take an umbrella? Answer yes or no.",
+    "prompt_es": "Si llueve, Carlos lleva un paraguas. Esta lloviendo. Lleva Carlos un paraguas? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 4
+  },
+  {
+    "prompt_en": "If it rains, Carlos takes an umbrella. It is raining. Does Carlos take an umbrella? Answer yes or no.",
+    "prompt_es": "Si llueve, Carlos lleva un paraguas. Esta lloviendo. Lleva Carlos un paraguas? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 5
+  },
+  {
+    "prompt_en": "All of Marta's rabbits are gray. Marta has a rabbit named Diego. What color is Diego? Answer with just the color.",
+    "prompt_es": "Todos los conejos de Marta son gris. Marta tiene un conejo llamado Diego. De que color es Diego? Responde solo con el color.",
+    "answer_en": "gray",
+    "answer_es": "gris",
+    "task_type": "factual_inference",
+    "id": 6
+  },
+  {
+    "prompt_en": "All of Isabel's cats are gray. Isabel has a cat named Laura. What color is Laura? Answer with just the color.",
+    "prompt_es": "Todos los gatos de Isabel son gris. Isabel tiene un gato llamado Laura. De que color es Laura? Responde solo con el color.",
+    "answer_en": "gray",
+    "answer_es": "gris",
+    "task_type": "factual_inference",
+    "id": 7
+  },
+  {
+    "prompt_en": "Everyone in Isabel's family speaks Spanish. Isabel is in the family. Does Isabel speak Spanish? Answer yes or no.",
+    "prompt_es": "Todos en la familia de Isabel hablan espanol. Isabel esta en la familia. Habla Isabel espanol? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 8
+  },
+  {
+    "prompt_en": "All of Roberto's fishs are orange. Roberto has a fish named Carlos. What color is Carlos? Answer with just the color.",
+    "prompt_es": "Todos los pezs de Roberto son naranja. Roberto tiene un pez llamado Carlos. De que color es Carlos? Responde solo con el color.",
+    "answer_en": "orange",
+    "answer_es": "naranja",
+    "task_type": "factual_inference",
+    "id": 9
+  },
+  {
+    "prompt_en": "All of Ana's fishs are orange. Ana has a fish named Diego. What color is Diego? Answer with just the color.",
+    "prompt_es": "Todos los pezs de Ana son naranja. Ana tiene un pez llamado Diego. De que color es Diego? Responde solo con el color.",
+    "answer_en": "orange",
+    "answer_es": "naranja",
+    "task_type": "factual_inference",
+    "id": 10
+  },
+  {
+    "prompt_en": "Everyone in Laura's family speaks Spanish. Laura is in the family. Does Laura speak Spanish? Answer yes or no.",
+    "prompt_es": "Todos en la familia de Laura hablan espanol. Laura esta en la familia. Habla Laura espanol? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 11
+  },
+  {
+    "prompt_en": "All of Maria's cats are orange. Maria has a cat named Rosa. What color is Rosa? Answer with just the color.",
+    "prompt_es": "Todos los gatos de Maria son naranja. Maria tiene un gato llamado Rosa. De que color es Rosa? Responde solo con el color.",
+    "answer_en": "orange",
+    "answer_es": "naranja",
+    "task_type": "factual_inference",
+    "id": 12
+  },
+  {
+    "prompt_en": "All of Laura's fishs are black. Laura has a fish named Fernando. What color is Fernando? Answer with just the color.",
+    "prompt_es": "Todos los pezs de Laura son negro. Laura tiene un pez llamado Fernando. De que color es Fernando? Responde solo con el color.",
+    "answer_en": "black",
+    "answer_es": "negro",
+    "task_type": "factual_inference",
+    "id": 13
+  },
+  {
+    "prompt_en": "All of Miguel's rabbits are gray. Miguel has a rabbit named Roberto. What color is Roberto? Answer with just the color.",
+    "prompt_es": "Todos los conejos de Miguel son gris. Miguel tiene un conejo llamado Roberto. De que color es Roberto? Responde solo con el color.",
+    "answer_en": "gray",
+    "answer_es": "gris",
+    "task_type": "factual_inference",
+    "id": 14
+  },
+  {
+    "prompt_en": "If it rains, Fernando takes an umbrella. It is raining. Does Fernando take an umbrella? Answer yes or no.",
+    "prompt_es": "Si llueve, Fernando lleva un paraguas. Esta lloviendo. Lleva Fernando un paraguas? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 15
+  },
+  {
+    "prompt_en": "If it rains, Lucia takes an umbrella. It is raining. Does Lucia take an umbrella? Answer yes or no.",
+    "prompt_es": "Si llueve, Lucia lleva un paraguas. Esta lloviendo. Lleva Lucia un paraguas? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 16
+  },
+  {
+    "prompt_en": "If it rains, Lucia takes an umbrella. It is raining. Does Lucia take an umbrella? Answer yes or no.",
+    "prompt_es": "Si llueve, Lucia lleva un paraguas. Esta lloviendo. Lleva Lucia un paraguas? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 17
+  },
+  {
+    "prompt_en": "If it rains, Marta takes an umbrella. It is raining. Does Marta take an umbrella? Answer yes or no.",
+    "prompt_es": "Si llueve, Marta lleva un paraguas. Esta lloviendo. Lleva Marta un paraguas? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 18
+  },
+  {
+    "prompt_en": "If it rains, Fernando takes an umbrella. It is raining. Does Fernando take an umbrella? Answer yes or no.",
+    "prompt_es": "Si llueve, Fernando lleva un paraguas. Esta lloviendo. Lleva Fernando un paraguas? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 19
+  },
+  {
+    "prompt_en": "Everyone in Fernando's family speaks Spanish. Fernando is in the family. Does Fernando speak Spanish? Answer yes or no.",
+    "prompt_es": "Todos en la familia de Fernando hablan espanol. Fernando esta en la familia. Habla Fernando espanol? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 20
+  },
+  {
+    "prompt_en": "Everyone in Pablo's family speaks Spanish. Pablo is in the family. Does Pablo speak Spanish? Answer yes or no.",
+    "prompt_es": "Todos en la familia de Pablo hablan espanol. Pablo esta en la familia. Habla Pablo espanol? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 21
+  },
+  {
+    "prompt_en": "All of Carmen's dogs are gray. Carmen has a dog named Roberto. What color is Roberto? Answer with just the color.",
+    "prompt_es": "Todos los perros de Carmen son gris. Carmen tiene un perro llamado Roberto. De que color es Roberto? Responde solo con el color.",
+    "answer_en": "gray",
+    "answer_es": "gris",
+    "task_type": "factual_inference",
+    "id": 22
+  },
+  {
+    "prompt_en": "If it rains, Isabel takes an umbrella. It is raining. Does Isabel take an umbrella? Answer yes or no.",
+    "prompt_es": "Si llueve, Isabel lleva un paraguas. Esta lloviendo. Lleva Isabel un paraguas? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 23
+  },
+  {
+    "prompt_en": "Everyone in Lucia's family speaks Spanish. Lucia is in the family. Does Lucia speak Spanish? Answer yes or no.",
+    "prompt_es": "Todos en la familia de Lucia hablan espanol. Lucia esta en la familia. Habla Lucia espanol? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 24
+  },
+  {
+    "prompt_en": "If it rains, Isabel takes an umbrella. It is raining. Does Isabel take an umbrella? Answer yes or no.",
+    "prompt_es": "Si llueve, Isabel lleva un paraguas. Esta lloviendo. Lleva Isabel un paraguas? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 25
+  },
+  {
+    "prompt_en": "All of Diego's fishs are orange. Diego has a fish named Fernando. What color is Fernando? Answer with just the color.",
+    "prompt_es": "Todos los pezs de Diego son naranja. Diego tiene un pez llamado Fernando. De que color es Fernando? Responde solo con el color.",
+    "answer_en": "orange",
+    "answer_es": "naranja",
+    "task_type": "factual_inference",
+    "id": 26
+  },
+  {
+    "prompt_en": "All of Lucia's birds are orange. Lucia has a bird named Carlos. What color is Carlos? Answer with just the color.",
+    "prompt_es": "Todos los pajaros de Lucia son naranja. Lucia tiene un pajaro llamado Carlos. De que color es Carlos? Responde solo con el color.",
+    "answer_en": "orange",
+    "answer_es": "naranja",
+    "task_type": "factual_inference",
+    "id": 27
+  },
+  {
+    "prompt_en": "All of Pedro's cats are white. Pedro has a cat named Sofia. What color is Sofia? Answer with just the color.",
+    "prompt_es": "Todos los gatos de Pedro son blanco. Pedro tiene un gato llamado Sofia. De que color es Sofia? Responde solo con el color.",
+    "answer_en": "white",
+    "answer_es": "blanco",
+    "task_type": "factual_inference",
+    "id": 28
+  },
+  {
+    "prompt_en": "All of Marta's cats are gray. Marta has a cat named Pedro. What color is Pedro? Answer with just the color.",
+    "prompt_es": "Todos los gatos de Marta son gris. Marta tiene un gato llamado Pedro. De que color es Pedro? Responde solo con el color.",
+    "answer_en": "gray",
+    "answer_es": "gris",
+    "task_type": "factual_inference",
+    "id": 29
+  },
+  {
+    "prompt_en": "If it rains, Roberto takes an umbrella. It is raining. Does Roberto take an umbrella? Answer yes or no.",
+    "prompt_es": "Si llueve, Roberto lleva un paraguas. Esta lloviendo. Lleva Roberto un paraguas? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 30
+  },
+  {
+    "prompt_en": "If it rains, Rosa takes an umbrella. It is raining. Does Rosa take an umbrella? Answer yes or no.",
+    "prompt_es": "Si llueve, Rosa lleva un paraguas. Esta lloviendo. Lleva Rosa un paraguas? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 31
+  },
+  {
+    "prompt_en": "All of Rosa's birds are gray. Rosa has a bird named Carlos. What color is Carlos? Answer with just the color.",
+    "prompt_es": "Todos los pajaros de Rosa son gris. Rosa tiene un pajaro llamado Carlos. De que color es Carlos? Responde solo con el color.",
+    "answer_en": "gray",
+    "answer_es": "gris",
+    "task_type": "factual_inference",
+    "id": 32
+  },
+  {
+    "prompt_en": "All of Andres's birds are black. Andres has a bird named Pedro. What color is Pedro? Answer with just the color.",
+    "prompt_es": "Todos los pajaros de Andres son negro. Andres tiene un pajaro llamado Pedro. De que color es Pedro? Responde solo con el color.",
+    "answer_en": "black",
+    "answer_es": "negro",
+    "task_type": "factual_inference",
+    "id": 33
+  },
+  {
+    "prompt_en": "All of Roberto's cats are gray. Roberto has a cat named Carlos. What color is Carlos? Answer with just the color.",
+    "prompt_es": "Todos los gatos de Roberto son gris. Roberto tiene un gato llamado Carlos. De que color es Carlos? Responde solo con el color.",
+    "answer_en": "gray",
+    "answer_es": "gris",
+    "task_type": "factual_inference",
+    "id": 34
+  },
+  {
+    "prompt_en": "All of Isabel's fishs are black. Isabel has a fish named Fernando. What color is Fernando? Answer with just the color.",
+    "prompt_es": "Todos los pezs de Isabel son negro. Isabel tiene un pez llamado Fernando. De que color es Fernando? Responde solo con el color.",
+    "answer_en": "black",
+    "answer_es": "negro",
+    "task_type": "factual_inference",
+    "id": 35
+  },
+  {
+    "prompt_en": "If it rains, Roberto takes an umbrella. It is raining. Does Roberto take an umbrella? Answer yes or no.",
+    "prompt_es": "Si llueve, Roberto lleva un paraguas. Esta lloviendo. Lleva Roberto un paraguas? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 36
+  },
+  {
+    "prompt_en": "All of Marta's cats are black. Marta has a cat named Pedro. What color is Pedro? Answer with just the color.",
+    "prompt_es": "Todos los gatos de Marta son negro. Marta tiene un gato llamado Pedro. De que color es Pedro? Responde solo con el color.",
+    "answer_en": "black",
+    "answer_es": "negro",
+    "task_type": "factual_inference",
+    "id": 37
+  },
+  {
+    "prompt_en": "Everyone in Carlos's family speaks Spanish. Carlos is in the family. Does Carlos speak Spanish? Answer yes or no.",
+    "prompt_es": "Todos en la familia de Carlos hablan espanol. Carlos esta en la familia. Habla Carlos espanol? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 38
+  },
+  {
+    "prompt_en": "Everyone in Fernando's family speaks Spanish. Fernando is in the family. Does Fernando speak Spanish? Answer yes or no.",
+    "prompt_es": "Todos en la familia de Fernando hablan espanol. Fernando esta en la familia. Habla Fernando espanol? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 39
+  },
+  {
+    "prompt_en": "Everyone in Fernando's family speaks Spanish. Fernando is in the family. Does Fernando speak Spanish? Answer yes or no.",
+    "prompt_es": "Todos en la familia de Fernando hablan espanol. Fernando esta en la familia. Habla Fernando espanol? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 40
+  },
+  {
+    "prompt_en": "If it rains, Pablo takes an umbrella. It is raining. Does Pablo take an umbrella? Answer yes or no.",
+    "prompt_es": "Si llueve, Pablo lleva un paraguas. Esta lloviendo. Lleva Pablo un paraguas? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 41
+  },
+  {
+    "prompt_en": "All of Carlos's cats are gray. Carlos has a cat named Isabel. What color is Isabel? Answer with just the color.",
+    "prompt_es": "Todos los gatos de Carlos son gris. Carlos tiene un gato llamado Isabel. De que color es Isabel? Responde solo con el color.",
+    "answer_en": "gray",
+    "answer_es": "gris",
+    "task_type": "factual_inference",
+    "id": 42
+  },
+  {
+    "prompt_en": "All of Fernando's dogs are orange. Fernando has a dog named Pedro. What color is Pedro? Answer with just the color.",
+    "prompt_es": "Todos los perros de Fernando son naranja. Fernando tiene un perro llamado Pedro. De que color es Pedro? Responde solo con el color.",
+    "answer_en": "orange",
+    "answer_es": "naranja",
+    "task_type": "factual_inference",
+    "id": 43
+  },
+  {
+    "prompt_en": "Everyone in Fernando's family speaks Spanish. Fernando is in the family. Does Fernando speak Spanish? Answer yes or no.",
+    "prompt_es": "Todos en la familia de Fernando hablan espanol. Fernando esta en la familia. Habla Fernando espanol? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 44
+  },
+  {
+    "prompt_en": "All of Andres's rabbits are black. Andres has a rabbit named Laura. What color is Laura? Answer with just the color.",
+    "prompt_es": "Todos los conejos de Andres son negro. Andres tiene un conejo llamado Laura. De que color es Laura? Responde solo con el color.",
+    "answer_en": "black",
+    "answer_es": "negro",
+    "task_type": "factual_inference",
+    "id": 45
+  },
+  {
+    "prompt_en": "All of Luis's dogs are orange. Luis has a dog named Laura. What color is Laura? Answer with just the color.",
+    "prompt_es": "Todos los perros de Luis son naranja. Luis tiene un perro llamado Laura. De que color es Laura? Responde solo con el color.",
+    "answer_en": "orange",
+    "answer_es": "naranja",
+    "task_type": "factual_inference",
+    "id": 46
+  },
+  {
+    "prompt_en": "All of Rosa's fishs are black. Rosa has a fish named Fernando. What color is Fernando? Answer with just the color.",
+    "prompt_es": "Todos los pezs de Rosa son negro. Rosa tiene un pez llamado Fernando. De que color es Fernando? Responde solo con el color.",
+    "answer_en": "black",
+    "answer_es": "negro",
+    "task_type": "factual_inference",
+    "id": 47
+  },
+  {
+    "prompt_en": "Everyone in Laura's family speaks Spanish. Laura is in the family. Does Laura speak Spanish? Answer yes or no.",
+    "prompt_es": "Todos en la familia de Laura hablan espanol. Laura esta en la familia. Habla Laura espanol? Responde si o no.",
+    "answer_en": "yes",
+    "answer_es": "si",
+    "task_type": "factual_inference",
+    "id": 48
+  },
+  {
+    "prompt_en": "All of Lucia's birds are white. Lucia has a bird named Marta. What color is Marta? Answer with just the color.",
+    "prompt_es": "Todos los pajaros de Lucia son blanco. Lucia tiene un pajaro llamado Marta. De que color es Marta? Responde solo con el color.",
+    "answer_en": "white",
+    "answer_es": "blanco",
+    "task_type": "factual_inference",
+    "id": 49
+  }
+]

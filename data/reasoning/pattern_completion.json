@@ -1,0 +1,42 @@
+[
+  {
+    "prompt_en": "What comes next in the sequence: 4, 6, 8, 10, 12, ? Answer with just the number.",
+    "prompt_es": "Que sigue en la secuencia: 4, 6, 8, 10, 12, ? Responde solo con el numero.",
+    "answer_en": "14",
+    "answer_es": "14",
+    "task_type": "pattern_completion",
+    "id": 0
+  },
+  {
+    "prompt_en": "What comes next in the sequence: 1, 3, 5, 7, 9, ? Answer with just the number.",
+    "prompt_es": "Que sigue en la secuencia: 1, 3, 5, 7, 9, ? Responde solo con el numero.",
+    "answer_en": "11",
+    "answer_es": "11",
+    "task_type": "pattern_completion",
+    "id": 1
+  },
+  {
+    "prompt_en": "What comes next in the sequence: 3, 5, 7, 9, 11, ? Answer with just the number.",
+    "prompt_es": "Que sigue en la secuencia: 3, 5, 7, 9, 11, ? Responde solo con el numero.",
+    "answer_en": "13",
+    "answer_es": "13",
+    "task_type": "pattern_completion",
+    "id": 2
+  },
+  {
+    "prompt_en": "What comes next in the sequence: 20, 25, 30, 35, 40, ? Answer with just the number.",
+    "prompt_es": "Que sigue en la secuencia: 20, 25, 30, 35, 40, ? Responde solo con el numero.",
+    "answer_en": "45",
+    "answer_es": "45",
+    "task_type": "pattern_completion",
+    "id": 3
+  },
+  {
+    "prompt_en": "What comes next in the sequence: 5, 7, 9, 11, 13, ? Answer with just the number.",
+    "prompt_es": "Que sigue en la secuencia: 5, 7, 9, 11, 13, ? Responde solo con el numero.",
+    "answer_en": "15",
+    "answer_es": "15",
+    "task_type": "pattern_completion",
+    "id": 4
+  }
+]

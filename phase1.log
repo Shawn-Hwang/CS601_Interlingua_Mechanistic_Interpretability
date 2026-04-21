@@ -1,0 +1,308 @@
+nohup: ignoring input
+Loading model: gemma-3-1b-it on cuda
+Loaded pretrained model gemma-3-1b-it into HookedTransformer
+Loaded from local cache.
+
+============================================================
+Processing language pair: English vs ES
+============================================================
+Loaded eng_Latn-spa_Latn from local disk.
+Loaded 500 parallel pairs from eng_Latn-spa_Latn
+
+--- Extracting activations for English sentences (es) ---
+Extracting activations:   0%|          | 0/63 [00:00<?, ?it/s]Extracting activations:   2%|▏         | 1/63 [00:00<00:29,  2.14it/s]Extracting activations:   3%|▎         | 2/63 [00:00<00:19,  3.15it/s]Extracting activations:   5%|▍         | 3/63 [00:00<00:16,  3.70it/s]Extracting activations:   6%|▋         | 4/63 [00:01<00:14,  3.98it/s]Extracting activations:   8%|▊         | 5/63 [00:01<00:13,  4.28it/s]Extracting activations:  10%|▉         | 6/63 [00:01<00:12,  4.49it/s]Extracting activations:  11%|█         | 7/63 [00:01<00:12,  4.51it/s]Extracting activations:  13%|█▎        | 8/63 [00:01<00:12,  4.58it/s]Extracting activations:  14%|█▍        | 9/63 [00:02<00:11,  4.76it/s]Extracting activations:  16%|█▌        | 10/63 [00:02<00:11,  4.78it/s]Extracting activations:  17%|█▋        | 11/63 [00:02<00:10,  4.73it/s]Extracting activations:  19%|█▉        | 12/63 [00:02<00:10,  4.81it/s]Extracting activations:  21%|██        | 13/63 [00:02<00:10,  4.86it/s]Extracting activations:  22%|██▏       | 14/63 [00:03<00:10,  4.87it/s]Extracting activations:  24%|██▍       | 15/63 [00:03<00:09,  4.92it/s]Extracting activations:  25%|██▌       | 16/63 [00:03<00:09,  4.91it/s]Extracting activations:  27%|██▋       | 17/63 [00:03<00:09,  4.94it/s]Extracting activations:  29%|██▊       | 18/63 [00:03<00:09,  4.97it/s]Extracting activations:  30%|███       | 19/63 [00:04<00:08,  5.00it/s]Extracting activations:  32%|███▏      | 20/63 [00:04<00:08,  5.06it/s]Extracting activations:  33%|███▎      | 21/63 [00:04<00:08,  4.97it/s]Extracting activations:  35%|███▍      | 22/63 [00:04<00:08,  4.97it/s]Extracting activations:  37%|███▋      | 23/63 [00:04<00:08,  4.97it/s]Extracting activations:  38%|███▊      | 24/63 [00:05<00:07,  4.94it/s]Extracting activations:  40%|███▉      | 25/63 [00:05<00:07,  4.99it/s]Extracting activations:  41%|████▏     | 26/63 [00:05<00:07,  5.01it/s]Extracting activations:  43%|████▎     | 27/63 [00:05<00:07,  5.08it/s]Extracting activations:  44%|████▍     | 28/63 [00:05<00:06,  5.19it/s]Extracting activations:  46%|████▌     | 29/63 [00:06<00:06,  5.12it/s]Extracting activations:  48%|████▊     | 30/63 [00:06<00:06,  5.07it/s]Extracting activations:  49%|████▉     | 31/63 [00:06<00:06,  5.03it/s]Extracting activations:  51%|█████     | 32/63 [00:06<00:06,  5.03it/s]Extracting activations:  52%|█████▏    | 33/63 [00:06<00:05,  5.04it/s]Extracting activations:  54%|█████▍    | 34/63 [00:07<00:05,  5.13it/s]Extracting activations:  56%|█████▌    | 35/63 [00:07<00:05,  5.19it/s]Extracting activations:  57%|█████▋    | 36/63 [00:07<00:05,  5.16it/s]Extracting activations:  59%|█████▊    | 37/63 [00:07<00:05,  5.18it/s]Extracting activations:  60%|██████    | 38/63 [00:07<00:04,  5.24it/s]Extracting activations:  62%|██████▏   | 39/63 [00:08<00:04,  5.11it/s]Extracting activations:  63%|██████▎   | 40/63 [00:08<00:04,  5.17it/s]Extracting activations:  65%|██████▌   | 41/63 [00:08<00:04,  5.25it/s]Extracting activations:  67%|██████▋   | 42/63 [00:08<00:03,  5.27it/s]Extracting activations:  68%|██████▊   | 43/63 [00:08<00:03,  5.33it/s]Extracting activations:  70%|██████▉   | 44/63 [00:09<00:03,  5.39it/s]Extracting activations:  71%|███████▏  | 45/63 [00:09<00:03,  5.28it/s]Extracting activations:  73%|███████▎  | 46/63 [00:09<00:03,  5.33it/s]Extracting activations:  75%|███████▍  | 47/63 [00:09<00:03,  5.24it/s]Extracting activations:  76%|███████▌  | 48/63 [00:09<00:02,  5.21it/s]Extracting activations:  78%|███████▊  | 49/63 [00:09<00:02,  5.21it/s]Extracting activations:  79%|███████▉  | 50/63 [00:10<00:02,  5.23it/s]Extracting activations:  81%|████████  | 51/63 [00:10<00:02,  5.19it/s]Extracting activations:  83%|████████▎ | 52/63 [00:10<00:02,  5.13it/s]Extracting activations:  84%|████████▍ | 53/63 [00:10<00:01,  5.13it/s]Extracting activations:  86%|████████▌ | 54/63 [00:10<00:01,  5.00it/s]Extracting activations:  87%|████████▋ | 55/63 [00:11<00:01,  5.03it/s]Extracting activations:  89%|████████▉ | 56/63 [00:11<00:01,  5.03it/s]Extracting activations:  90%|█████████ | 57/63 [00:11<00:01,  5.04it/s]Extracting activations:  92%|█████████▏| 58/63 [00:11<00:01,  4.96it/s]Extracting activations:  94%|█████████▎| 59/63 [00:11<00:00,  4.98it/s]Extracting activations:  95%|█████████▌| 60/63 [00:12<00:00,  5.02it/s]Extracting activations:  97%|█████████▋| 61/63 [00:12<00:00,  5.01it/s]Extracting activations:  98%|█████████▊| 62/63 [00:12<00:00,  4.98it/s]Extracting activations: 100%|██████████| 63/63 [00:12<00:00,  5.06it/s]Extracting activations: 100%|██████████| 63/63 [00:12<00:00,  4.93it/s]
+--- Extracting activations for es sentences ---
+Extracting activations:   0%|          | 0/63 [00:00<?, ?it/s]Extracting activations:   2%|▏         | 1/63 [00:00<00:14,  4.39it/s]Extracting activations:   3%|▎         | 2/63 [00:00<00:13,  4.37it/s]Extracting activations:   5%|▍         | 3/63 [00:00<00:13,  4.60it/s]Extracting activations:   6%|▋         | 4/63 [00:00<00:12,  4.62it/s]Extracting activations:   8%|▊         | 5/63 [00:01<00:12,  4.60it/s]Extracting activations:  10%|▉         | 6/63 [00:01<00:12,  4.64it/s]Extracting activations:  11%|█         | 7/63 [00:01<00:12,  4.58it/s]Extracting activations:  13%|█▎        | 8/63 [00:01<00:12,  4.51it/s]Extracting activations:  14%|█▍        | 9/63 [00:01<00:11,  4.56it/s]Extracting activations:  16%|█▌        | 10/63 [00:02<00:11,  4.52it/s]Extracting activations:  17%|█▋        | 11/63 [00:02<00:11,  4.55it/s]Extracting activations:  19%|█▉        | 12/63 [00:02<00:10,  4.68it/s]Extracting activations:  21%|██        | 13/63 [00:02<00:10,  4.67it/s]Extracting activations:  22%|██▏       | 14/63 [00:03<00:10,  4.58it/s]Extracting activations:  24%|██▍       | 15/63 [00:03<00:10,  4.54it/s]Extracting activations:  25%|██▌       | 16/63 [00:03<00:10,  4.55it/s]Extracting activations:  27%|██▋       | 17/63 [00:03<00:09,  4.64it/s]Extracting activations:  29%|██▊       | 18/63 [00:03<00:09,  4.63it/s]Extracting activations:  30%|███       | 19/63 [00:04<00:09,  4.68it/s]Extracting activations:  32%|███▏      | 20/63 [00:04<00:09,  4.75it/s]Extracting activations:  33%|███▎      | 21/63 [00:04<00:08,  4.71it/s]Extracting activations:  35%|███▍      | 22/63 [00:04<00:08,  4.75it/s]Extracting activations:  37%|███▋      | 23/63 [00:04<00:08,  4.80it/s]Extracting activations:  38%|███▊      | 24/63 [00:05<00:08,  4.87it/s]Extracting activations:  40%|███▉      | 25/63 [00:05<00:07,  4.92it/s]Extracting activations:  41%|████▏     | 26/63 [00:05<00:07,  4.94it/s]Extracting activations:  43%|████▎     | 27/63 [00:05<00:07,  4.92it/s]Extracting activations:  44%|████▍     | 28/63 [00:05<00:07,  4.96it/s]Extracting activations:  46%|████▌     | 29/63 [00:06<00:06,  4.98it/s]Extracting activations:  48%|████▊     | 30/63 [00:06<00:06,  4.99it/s]Extracting activations:  49%|████▉     | 31/63 [00:06<00:06,  4.95it/s]Extracting activations:  51%|█████     | 32/63 [00:06<00:06,  4.99it/s]Extracting activations:  52%|█████▏    | 33/63 [00:06<00:06,  4.98it/s]Extracting activations:  54%|█████▍    | 34/63 [00:07<00:05,  4.97it/s]Extracting activations:  56%|█████▌    | 35/63 [00:07<00:05,  4.81it/s]Extracting activations:  57%|█████▋    | 36/63 [00:07<00:05,  4.82it/s]Extracting activations:  59%|█████▊    | 37/63 [00:07<00:05,  4.92it/s]Extracting activations:  60%|██████    | 38/63 [00:07<00:05,  4.94it/s]Extracting activations:  62%|██████▏   | 39/63 [00:08<00:04,  4.97it/s]Extracting activations:  63%|██████▎   | 40/63 [00:08<00:04,  4.96it/s]Extracting activations:  65%|██████▌   | 41/63 [00:08<00:04,  5.00it/s]Extracting activations:  67%|██████▋   | 42/63 [00:08<00:04,  5.00it/s]Extracting activations:  68%|██████▊   | 43/63 [00:08<00:03,  5.07it/s]Extracting activations:  70%|██████▉   | 44/63 [00:09<00:03,  5.15it/s]Extracting activations:  71%|███████▏  | 45/63 [00:09<00:03,  5.06it/s]Extracting activations:  73%|███████▎  | 46/63 [00:09<00:03,  4.91it/s]Extracting activations:  75%|███████▍  | 47/63 [00:09<00:03,  4.89it/s]Extracting activations:  76%|███████▌  | 48/63 [00:09<00:03,  4.91it/s]Extracting activations:  78%|███████▊  | 49/63 [00:10<00:02,  4.95it/s]Extracting activations:  79%|███████▉  | 50/63 [00:10<00:02,  4.81it/s]Extracting activations:  81%|████████  | 51/63 [00:10<00:02,  4.84it/s]Extracting activations:  83%|████████▎ | 52/63 [00:10<00:02,  4.76it/s]Extracting activations:  84%|████████▍ | 53/63 [00:11<00:02,  4.86it/s]Extracting activations:  86%|████████▌ | 54/63 [00:11<00:01,  4.82it/s]Extracting activations:  87%|████████▋ | 55/63 [00:11<00:01,  4.90it/s]Extracting activations:  89%|████████▉ | 56/63 [00:11<00:01,  4.97it/s]Extracting activations:  90%|█████████ | 57/63 [00:11<00:01,  4.94it/s]Extracting activations:  92%|█████████▏| 58/63 [00:12<00:01,  4.96it/s]Extracting activations:  94%|█████████▎| 59/63 [00:12<00:00,  4.95it/s]Extracting activations:  95%|█████████▌| 60/63 [00:12<00:00,  4.94it/s]Extracting activations:  97%|█████████▋| 61/63 [00:12<00:00,  4.80it/s]Extracting activations:  98%|█████████▊| 62/63 [00:12<00:00,  4.55it/s]Extracting activations: 100%|██████████| 63/63 [00:13<00:00,  4.66it/s]Extracting activations: 100%|██████████| 63/63 [00:13<00:00,  4.80it/s]
+Train/test split: 375 train, 125 test
+--- Computing directions at each layer (pooling=mean) ---
+Layers:   0%|          | 0/26 [00:00<?, ?it/s]Layers:   4%|▍         | 1/26 [00:00<00:15,  1.61it/s]Layers:   8%|▊         | 2/26 [00:01<00:14,  1.68it/s]Layers:  12%|█▏        | 3/26 [00:01<00:13,  1.66it/s]Layers:  15%|█▌        | 4/26 [00:02<00:12,  1.69it/s]Layers:  19%|█▉        | 5/26 [00:02<00:12,  1.69it/s]Layers:  23%|██▎       | 6/26 [00:03<00:11,  1.71it/s]Layers:  27%|██▋       | 7/26 [00:04<00:11,  1.70it/s]Layers:  31%|███       | 8/26 [00:04<00:10,  1.71it/s]Layers:  35%|███▍      | 9/26 [00:05<00:10,  1.69it/s]Layers:  38%|███▊      | 10/26 [00:05<00:09,  1.65it/s]Layers:  42%|████▏     | 11/26 [00:06<00:08,  1.67it/s]Layers:  46%|████▌     | 12/26 [00:07<00:08,  1.68it/s]Layers:  50%|█████     | 13/26 [00:07<00:07,  1.67it/s]Layers:  54%|█████▍    | 14/26 [00:08<00:07,  1.63it/s]Layers:  58%|█████▊    | 15/26 [00:08<00:06,  1.64it/s]Layers:  62%|██████▏   | 16/26 [00:09<00:06,  1.63it/s]Layers:  65%|██████▌   | 17/26 [00:10<00:05,  1.63it/s]Layers:  69%|██████▉   | 18/26 [00:10<00:04,  1.66it/s]Layers:  73%|███████▎  | 19/26 [00:11<00:04,  1.66it/s]Layers:  77%|███████▋  | 20/26 [00:11<00:03,  1.73it/s]Layers:  81%|████████  | 21/26 [00:12<00:02,  1.71it/s]Layers:  85%|████████▍ | 22/26 [00:13<00:02,  1.70it/s]Layers:  88%|████████▊ | 23/26 [00:13<00:01,  1.66it/s]Layers:  92%|█████████▏| 24/26 [00:14<00:01,  1.64it/s]Layers:  96%|█████████▌| 25/26 [00:15<00:00,  1.61it/s]Layers: 100%|██████████| 26/26 [00:15<00:00,  1.54it/s]Layers: 100%|██████████| 26/26 [00:15<00:00,  1.65it/s]
+Saved directions, convergence, and accuracy for es
+
+Convergence (pairwise cosine sim between methods):
+  Layer  0: mean_diff_vs_logreg: 0.3089, mean_diff_vs_pca: 0.5525, logreg_vs_pca: 0.0175
+  Layer  1: mean_diff_vs_logreg: 0.3982, mean_diff_vs_pca: 0.3519, logreg_vs_pca: 0.0143
+  Layer  2: mean_diff_vs_logreg: 0.4169, mean_diff_vs_pca: 0.0218, logreg_vs_pca: 0.0012
+  Layer  3: mean_diff_vs_logreg: 0.3083, mean_diff_vs_pca: 0.5543, logreg_vs_pca: -0.0017
+  Layer  4: mean_diff_vs_logreg: 0.2180, mean_diff_vs_pca: 0.7531, logreg_vs_pca: -0.0072
+  Layer  5: mean_diff_vs_logreg: 0.1531, mean_diff_vs_pca: 0.8985, logreg_vs_pca: 0.0089
+  Layer  6: mean_diff_vs_logreg: 0.1348, mean_diff_vs_pca: 0.9728, logreg_vs_pca: 0.0215
+  Layer  7: mean_diff_vs_logreg: 0.1079, mean_diff_vs_pca: 0.9885, logreg_vs_pca: 0.0286
+  Layer  8: mean_diff_vs_logreg: 0.1136, mean_diff_vs_pca: 0.9837, logreg_vs_pca: 0.0467
+  Layer  9: mean_diff_vs_logreg: 0.1088, mean_diff_vs_pca: 0.9862, logreg_vs_pca: 0.0469
+  Layer 10: mean_diff_vs_logreg: 0.1065, mean_diff_vs_pca: 0.9874, logreg_vs_pca: 0.0421
+  Layer 11: mean_diff_vs_logreg: 0.1030, mean_diff_vs_pca: 0.9857, logreg_vs_pca: 0.0344
+  Layer 12: mean_diff_vs_logreg: 0.1059, mean_diff_vs_pca: 0.9844, logreg_vs_pca: 0.0379
+  Layer 13: mean_diff_vs_logreg: 0.1224, mean_diff_vs_pca: 0.9803, logreg_vs_pca: 0.0464
+  Layer 14: mean_diff_vs_logreg: 0.1306, mean_diff_vs_pca: 0.9763, logreg_vs_pca: 0.0482
+  Layer 15: mean_diff_vs_logreg: 0.1697, mean_diff_vs_pca: 0.9484, logreg_vs_pca: 0.0437
+  Layer 16: mean_diff_vs_logreg: 0.2110, mean_diff_vs_pca: 0.9065, logreg_vs_pca: 0.0472
+  Layer 17: mean_diff_vs_logreg: 0.2557, mean_diff_vs_pca: 0.8485, logreg_vs_pca: 0.0339
+  Layer 18: mean_diff_vs_logreg: 0.2792, mean_diff_vs_pca: 0.7842, logreg_vs_pca: 0.0251
+  Layer 19: mean_diff_vs_logreg: 0.3607, mean_diff_vs_pca: 0.6460, logreg_vs_pca: 0.0418
+  Layer 20: mean_diff_vs_logreg: 0.3929, mean_diff_vs_pca: 0.5499, logreg_vs_pca: 0.0184
+  Layer 21: mean_diff_vs_logreg: 0.3883, mean_diff_vs_pca: 0.2469, logreg_vs_pca: 0.0049
+  Layer 22: mean_diff_vs_logreg: 0.3969, mean_diff_vs_pca: 0.0797, logreg_vs_pca: -0.0155
+  Layer 23: mean_diff_vs_logreg: 0.3952, mean_diff_vs_pca: 0.0669, logreg_vs_pca: 0.0304
+  Layer 24: mean_diff_vs_logreg: 0.3909, mean_diff_vs_pca: 0.0667, logreg_vs_pca: -0.0161
+  Layer 25: mean_diff_vs_logreg: 0.3889, mean_diff_vs_pca: 0.0177, logreg_vs_pca: 0.0108
+
+Classification accuracy (held-out 25%):
+  Layer  0: mean_diff: 0.536, logreg: 0.880, pca: 0.512
+  Layer  1: mean_diff: 0.552, logreg: 0.868, pca: 0.508
+  Layer  2: mean_diff: 0.660, logreg: 0.868, pca: 0.512
+  Layer  3: mean_diff: 0.540, logreg: 0.880, pca: 0.504
+  Layer  4: mean_diff: 0.500, logreg: 0.872, pca: 0.520
+  Layer  5: mean_diff: 0.516, logreg: 0.864, pca: 0.504
+  Layer  6: mean_diff: 0.580, logreg: 0.824, pca: 0.544
+  Layer  7: mean_diff: 0.576, logreg: 0.776, pca: 0.580
+  Layer  8: mean_diff: 0.528, logreg: 0.728, pca: 0.532
+  Layer  9: mean_diff: 0.540, logreg: 0.708, pca: 0.540
+  Layer 10: mean_diff: 0.532, logreg: 0.744, pca: 0.524
+  Layer 11: mean_diff: 0.544, logreg: 0.800, pca: 0.532
+  Layer 12: mean_diff: 0.544, logreg: 0.788, pca: 0.548
+  Layer 13: mean_diff: 0.580, logreg: 0.780, pca: 0.572
+  Layer 14: mean_diff: 0.572, logreg: 0.780, pca: 0.572
+  Layer 15: mean_diff: 0.576, logreg: 0.812, pca: 0.576
+  Layer 16: mean_diff: 0.572, logreg: 0.820, pca: 0.528
+  Layer 17: mean_diff: 0.564, logreg: 0.848, pca: 0.512
+  Layer 18: mean_diff: 0.564, logreg: 0.848, pca: 0.532
+  Layer 19: mean_diff: 0.552, logreg: 0.868, pca: 0.520
+  Layer 20: mean_diff: 0.560, logreg: 0.884, pca: 0.524
+  Layer 21: mean_diff: 0.688, logreg: 0.884, pca: 0.508
+  Layer 22: mean_diff: 0.864, logreg: 0.884, pca: 0.504
+  Layer 23: mean_diff: 0.848, logreg: 0.868, pca: 0.508
+  Layer 24: mean_diff: 0.868, logreg: 0.872, pca: 0.500
+  Layer 25: mean_diff: 0.832, logreg: 0.880, pca: 0.508
+
+============================================================
+Processing language pair: English vs FR
+============================================================
+Loaded eng_Latn-fra_Latn from local disk.
+Loaded 500 parallel pairs from eng_Latn-fra_Latn
+
+--- Extracting activations for English sentences (fr) ---
+Extracting activations:   0%|          | 0/63 [00:00<?, ?it/s]Extracting activations:   2%|▏         | 1/63 [00:00<00:14,  4.21it/s]Extracting activations:   3%|▎         | 2/63 [00:00<00:15,  3.96it/s]Extracting activations:   5%|▍         | 3/63 [00:00<00:14,  4.15it/s]Extracting activations:   6%|▋         | 4/63 [00:00<00:14,  4.12it/s]Extracting activations:   8%|▊         | 5/63 [00:01<00:13,  4.31it/s]Extracting activations:  10%|▉         | 6/63 [00:01<00:13,  4.33it/s]Extracting activations:  11%|█         | 7/63 [00:01<00:13,  4.29it/s]Extracting activations:  13%|█▎        | 8/63 [00:01<00:13,  4.15it/s]Extracting activations:  14%|█▍        | 9/63 [00:02<00:13,  4.14it/s]Extracting activations:  16%|█▌        | 10/63 [00:02<00:12,  4.10it/s]Extracting activations:  17%|█▋        | 11/63 [00:02<00:12,  4.14it/s]Extracting activations:  19%|█▉        | 12/63 [00:02<00:11,  4.25it/s]Extracting activations:  21%|██        | 13/63 [00:03<00:11,  4.29it/s]Extracting activations:  22%|██▏       | 14/63 [00:03<00:11,  4.23it/s]Extracting activations:  24%|██▍       | 15/63 [00:03<00:11,  4.30it/s]Extracting activations:  25%|██▌       | 16/63 [00:03<00:11,  4.16it/s]Extracting activations:  27%|██▋       | 17/63 [00:04<00:11,  4.13it/s]Extracting activations:  29%|██▊       | 18/63 [00:04<00:10,  4.11it/s]Extracting activations:  30%|███       | 19/63 [00:04<00:10,  4.21it/s]Extracting activations:  32%|███▏      | 20/63 [00:04<00:10,  4.13it/s]Extracting activations:  33%|███▎      | 21/63 [00:05<00:10,  4.10it/s]Extracting activations:  35%|███▍      | 22/63 [00:05<00:09,  4.27it/s]Extracting activations:  37%|███▋      | 23/63 [00:05<00:09,  4.27it/s]Extracting activations:  38%|███▊      | 24/63 [00:05<00:08,  4.40it/s]Extracting activations:  40%|███▉      | 25/63 [00:05<00:08,  4.42it/s]Extracting activations:  41%|████▏     | 26/63 [00:06<00:08,  4.45it/s]Extracting activations:  43%|████▎     | 27/63 [00:06<00:07,  4.54it/s]Extracting activations:  44%|████▍     | 28/63 [00:06<00:07,  4.54it/s]Extracting activations:  46%|████▌     | 29/63 [00:06<00:07,  4.53it/s]Extracting activations:  48%|████▊     | 30/63 [00:07<00:07,  4.32it/s]Extracting activations:  49%|████▉     | 31/63 [00:07<00:07,  4.12it/s]Extracting activations:  51%|█████     | 32/63 [00:07<00:07,  4.18it/s]Extracting activations:  52%|█████▏    | 33/63 [00:07<00:06,  4.30it/s]Extracting activations:  54%|█████▍    | 34/63 [00:07<00:06,  4.43it/s]Extracting activations:  56%|█████▌    | 35/63 [00:08<00:06,  4.44it/s]Extracting activations:  57%|█████▋    | 36/63 [00:08<00:06,  4.41it/s]Extracting activations:  59%|█████▊    | 37/63 [00:08<00:05,  4.51it/s]Extracting activations:  60%|██████    | 38/63 [00:08<00:05,  4.62it/s]Extracting activations:  62%|██████▏   | 39/63 [00:09<00:05,  4.45it/s]Extracting activations:  63%|██████▎   | 40/63 [00:09<00:05,  4.57it/s]Extracting activations:  65%|██████▌   | 41/63 [00:09<00:04,  4.66it/s]Extracting activations:  67%|██████▋   | 42/63 [00:09<00:04,  4.60it/s]Extracting activations:  68%|██████▊   | 43/63 [00:09<00:04,  4.68it/s]Extracting activations:  70%|██████▉   | 44/63 [00:10<00:04,  4.60it/s]Extracting activations:  71%|███████▏  | 45/63 [00:10<00:03,  4.62it/s]Extracting activations:  73%|███████▎  | 46/63 [00:10<00:03,  4.40it/s]Extracting activations:  75%|███████▍  | 47/63 [00:10<00:03,  4.51it/s]Extracting activations:  76%|███████▌  | 48/63 [00:11<00:03,  4.36it/s]Extracting activations:  78%|███████▊  | 49/63 [00:11<00:03,  4.45it/s]Extracting activations:  79%|███████▉  | 50/63 [00:11<00:03,  4.33it/s]Extracting activations:  81%|████████  | 51/63 [00:11<00:02,  4.40it/s]Extracting activations:  83%|████████▎ | 52/63 [00:11<00:02,  4.29it/s]Extracting activations:  84%|████████▍ | 53/63 [00:12<00:02,  4.34it/s]Extracting activations:  86%|████████▌ | 54/63 [00:12<00:02,  3.75it/s]Extracting activations:  87%|████████▋ | 55/63 [00:12<00:02,  3.84it/s]Extracting activations:  89%|████████▉ | 56/63 [00:13<00:01,  4.07it/s]Extracting activations:  90%|█████████ | 57/63 [00:13<00:01,  4.27it/s]Extracting activations:  92%|█████████▏| 58/63 [00:13<00:01,  4.49it/s]Extracting activations:  94%|█████████▎| 59/63 [00:13<00:00,  4.27it/s]Extracting activations:  95%|█████████▌| 60/63 [00:13<00:00,  4.43it/s]Extracting activations:  97%|█████████▋| 61/63 [00:14<00:00,  4.38it/s]Extracting activations:  98%|█████████▊| 62/63 [00:14<00:00,  4.22it/s]Extracting activations: 100%|██████████| 63/63 [00:14<00:00,  4.13it/s]Extracting activations: 100%|██████████| 63/63 [00:14<00:00,  4.30it/s]
+--- Extracting activations for fr sentences ---
+Extracting activations:   0%|          | 0/63 [00:00<?, ?it/s]Extracting activations:   2%|▏         | 1/63 [00:00<00:20,  3.08it/s]Extracting activations:   3%|▎         | 2/63 [00:00<00:17,  3.52it/s]Extracting activations:   5%|▍         | 3/63 [00:00<00:16,  3.70it/s]Extracting activations:   6%|▋         | 4/63 [00:01<00:15,  3.74it/s]Extracting activations:   8%|▊         | 5/63 [00:01<00:14,  3.87it/s]Extracting activations:  10%|▉         | 6/63 [00:01<00:15,  3.74it/s]Extracting activations:  11%|█         | 7/63 [00:01<00:14,  3.77it/s]Extracting activations:  13%|█▎        | 8/63 [00:02<00:14,  3.75it/s]Extracting activations:  14%|█▍        | 9/63 [00:02<00:14,  3.62it/s]Extracting activations:  16%|█▌        | 10/63 [00:02<00:14,  3.54it/s]Extracting activations:  17%|█▋        | 11/63 [00:03<00:14,  3.62it/s]Extracting activations:  19%|█▉        | 12/63 [00:03<00:13,  3.67it/s]Extracting activations:  21%|██        | 13/63 [00:03<00:13,  3.75it/s]Extracting activations:  22%|██▏       | 14/63 [00:03<00:13,  3.73it/s]Extracting activations:  24%|██▍       | 15/63 [00:04<00:13,  3.67it/s]Extracting activations:  25%|██▌       | 16/63 [00:04<00:13,  3.39it/s]Extracting activations:  27%|██▋       | 17/63 [00:04<00:13,  3.54it/s]Extracting activations:  29%|██▊       | 18/63 [00:04<00:12,  3.69it/s]Extracting activations:  30%|███       | 19/63 [00:05<00:11,  3.88it/s]Extracting activations:  32%|███▏      | 20/63 [00:05<00:11,  3.88it/s]Extracting activations:  33%|███▎      | 21/63 [00:05<00:10,  3.82it/s]Extracting activations:  35%|███▍      | 22/63 [00:05<00:10,  3.97it/s]Extracting activations:  37%|███▋      | 23/63 [00:06<00:10,  3.92it/s]Extracting activations:  38%|███▊      | 24/63 [00:06<00:09,  4.00it/s]Extracting activations:  40%|███▉      | 25/63 [00:06<00:09,  3.91it/s]Extracting activations:  41%|████▏     | 26/63 [00:06<00:09,  4.06it/s]Extracting activations:  43%|████▎     | 27/63 [00:07<00:09,  3.93it/s]Extracting activations:  44%|████▍     | 28/63 [00:07<00:08,  3.93it/s]Extracting activations:  46%|████▌     | 29/63 [00:07<00:08,  4.08it/s]Extracting activations:  48%|████▊     | 30/63 [00:07<00:08,  3.96it/s]Extracting activations:  49%|████▉     | 31/63 [00:08<00:08,  3.83it/s]Extracting activations:  51%|█████     | 32/63 [00:08<00:07,  3.96it/s]Extracting activations:  52%|█████▏    | 33/63 [00:08<00:07,  4.01it/s]Extracting activations:  54%|█████▍    | 34/63 [00:08<00:07,  4.04it/s]Extracting activations:  56%|█████▌    | 35/63 [00:09<00:06,  4.01it/s]Extracting activations:  57%|█████▋    | 36/63 [00:09<00:06,  4.08it/s]Extracting activations:  59%|█████▊    | 37/63 [00:09<00:06,  4.09it/s]Extracting activations:  60%|██████    | 38/63 [00:09<00:06,  4.06it/s]Extracting activations:  62%|██████▏   | 39/63 [00:10<00:05,  4.04it/s]Extracting activations:  63%|██████▎   | 40/63 [00:10<00:05,  4.10it/s]Extracting activations:  65%|██████▌   | 41/63 [00:10<00:05,  4.16it/s]Extracting activations:  67%|██████▋   | 42/63 [00:10<00:05,  4.16it/s]Extracting activations:  68%|██████▊   | 43/63 [00:11<00:04,  4.16it/s]Extracting activations:  70%|██████▉   | 44/63 [00:11<00:04,  4.31it/s]Extracting activations:  71%|███████▏  | 45/63 [00:11<00:04,  4.21it/s]Extracting activations:  73%|███████▎  | 46/63 [00:11<00:04,  4.04it/s]Extracting activations:  75%|███████▍  | 47/63 [00:12<00:04,  3.93it/s]Extracting activations:  76%|███████▌  | 48/63 [00:12<00:03,  3.93it/s]Extracting activations:  78%|███████▊  | 49/63 [00:12<00:03,  4.03it/s]Extracting activations:  79%|███████▉  | 50/63 [00:12<00:03,  3.86it/s]Extracting activations:  81%|████████  | 51/63 [00:13<00:03,  3.88it/s]Extracting activations:  83%|████████▎ | 52/63 [00:13<00:02,  3.80it/s]Extracting activations:  84%|████████▍ | 53/63 [00:13<00:02,  3.98it/s]Extracting activations:  86%|████████▌ | 54/63 [00:13<00:02,  3.99it/s]Extracting activations:  87%|████████▋ | 55/63 [00:14<00:01,  4.20it/s]Extracting activations:  89%|████████▉ | 56/63 [00:14<00:01,  4.18it/s]Extracting activations:  90%|█████████ | 57/63 [00:14<00:01,  4.13it/s]Extracting activations:  92%|█████████▏| 58/63 [00:14<00:01,  4.31it/s]Extracting activations:  94%|█████████▎| 59/63 [00:15<00:00,  4.36it/s]Extracting activations:  95%|█████████▌| 60/63 [00:15<00:00,  4.23it/s]Extracting activations:  97%|█████████▋| 61/63 [00:15<00:00,  4.13it/s]Extracting activations:  98%|█████████▊| 62/63 [00:15<00:00,  3.77it/s]Extracting activations: 100%|██████████| 63/63 [00:16<00:00,  3.93it/s]Extracting activations: 100%|██████████| 63/63 [00:16<00:00,  3.92it/s]
+Train/test split: 375 train, 125 test
+--- Computing directions at each layer (pooling=mean) ---
+Layers:   0%|          | 0/26 [00:00<?, ?it/s]Layers:   4%|▍         | 1/26 [00:00<00:15,  1.57it/s]Layers:   8%|▊         | 2/26 [00:01<00:15,  1.58it/s]Layers:  12%|█▏        | 3/26 [00:01<00:15,  1.53it/s]Layers:  15%|█▌        | 4/26 [00:02<00:14,  1.53it/s]Layers:  19%|█▉        | 5/26 [00:03<00:13,  1.52it/s]Layers:  23%|██▎       | 6/26 [00:03<00:13,  1.51it/s]Layers:  27%|██▋       | 7/26 [00:04<00:12,  1.50it/s]Layers:  31%|███       | 8/26 [00:05<00:12,  1.49it/s]Layers:  35%|███▍      | 9/26 [00:05<00:11,  1.51it/s]Layers:  38%|███▊      | 10/26 [00:06<00:10,  1.51it/s]Layers:  42%|████▏     | 11/26 [00:07<00:09,  1.51it/s]Layers:  46%|████▌     | 12/26 [00:07<00:09,  1.50it/s]Layers:  50%|█████     | 13/26 [00:08<00:08,  1.51it/s]Layers:  54%|█████▍    | 14/26 [00:09<00:08,  1.50it/s]Layers:  58%|█████▊    | 15/26 [00:09<00:07,  1.51it/s]Layers:  62%|██████▏   | 16/26 [00:10<00:06,  1.50it/s]Layers:  65%|██████▌   | 17/26 [00:11<00:06,  1.48it/s]Layers:  69%|██████▉   | 18/26 [00:11<00:05,  1.49it/s]Layers:  73%|███████▎  | 19/26 [00:12<00:04,  1.50it/s]Layers:  77%|███████▋  | 20/26 [00:13<00:04,  1.50it/s]Layers:  81%|████████  | 21/26 [00:13<00:03,  1.49it/s]Layers:  85%|████████▍ | 22/26 [00:14<00:02,  1.48it/s]Layers:  88%|████████▊ | 23/26 [00:15<00:01,  1.51it/s]Layers:  92%|█████████▏| 24/26 [00:15<00:01,  1.53it/s]Layers:  96%|█████████▌| 25/26 [00:16<00:00,  1.50it/s]Layers: 100%|██████████| 26/26 [00:17<00:00,  1.49it/s]Layers: 100%|██████████| 26/26 [00:17<00:00,  1.50it/s]
+Saved directions, convergence, and accuracy for fr
+
+Convergence (pairwise cosine sim between methods):
+  Layer  0: mean_diff_vs_logreg: 0.3683, mean_diff_vs_pca: 0.0916, logreg_vs_pca: 0.0105
+  Layer  1: mean_diff_vs_logreg: 0.4002, mean_diff_vs_pca: 0.2521, logreg_vs_pca: -0.0060
+  Layer  2: mean_diff_vs_logreg: 0.3485, mean_diff_vs_pca: 0.4526, logreg_vs_pca: -0.0003
+  Layer  3: mean_diff_vs_logreg: 0.2246, mean_diff_vs_pca: 0.7749, logreg_vs_pca: -0.0001
+  Layer  4: mean_diff_vs_logreg: 0.2044, mean_diff_vs_pca: 0.8440, logreg_vs_pca: 0.0253
+  Layer  5: mean_diff_vs_logreg: 0.1467, mean_diff_vs_pca: 0.9243, logreg_vs_pca: 0.0365
+  Layer  6: mean_diff_vs_logreg: 0.1409, mean_diff_vs_pca: 0.9818, logreg_vs_pca: 0.0497
+  Layer  7: mean_diff_vs_logreg: 0.1315, mean_diff_vs_pca: 0.9913, logreg_vs_pca: 0.0643
+  Layer  8: mean_diff_vs_logreg: 0.1242, mean_diff_vs_pca: 0.9879, logreg_vs_pca: 0.0693
+  Layer  9: mean_diff_vs_logreg: 0.1240, mean_diff_vs_pca: 0.9907, logreg_vs_pca: 0.0770
+  Layer 10: mean_diff_vs_logreg: 0.1309, mean_diff_vs_pca: 0.9922, logreg_vs_pca: 0.0803
+  Layer 11: mean_diff_vs_logreg: 0.1227, mean_diff_vs_pca: 0.9915, logreg_vs_pca: 0.0699
+  Layer 12: mean_diff_vs_logreg: 0.1268, mean_diff_vs_pca: 0.9908, logreg_vs_pca: 0.0735
+  Layer 13: mean_diff_vs_logreg: 0.1358, mean_diff_vs_pca: 0.9876, logreg_vs_pca: 0.0744
+  Layer 14: mean_diff_vs_logreg: 0.1744, mean_diff_vs_pca: 0.9864, logreg_vs_pca: 0.1123
+  Layer 15: mean_diff_vs_logreg: 0.1847, mean_diff_vs_pca: 0.9711, logreg_vs_pca: 0.0902
+  Layer 16: mean_diff_vs_logreg: 0.2087, mean_diff_vs_pca: 0.9332, logreg_vs_pca: 0.0633
+  Layer 17: mean_diff_vs_logreg: 0.2593, mean_diff_vs_pca: 0.8891, logreg_vs_pca: 0.0691
+  Layer 18: mean_diff_vs_logreg: 0.2789, mean_diff_vs_pca: 0.8363, logreg_vs_pca: 0.0745
+  Layer 19: mean_diff_vs_logreg: 0.3177, mean_diff_vs_pca: 0.7590, logreg_vs_pca: 0.0646
+  Layer 20: mean_diff_vs_logreg: 0.3046, mean_diff_vs_pca: 0.7484, logreg_vs_pca: 0.0432
+  Layer 21: mean_diff_vs_logreg: 0.3578, mean_diff_vs_pca: 0.5726, logreg_vs_pca: 0.0412
+  Layer 22: mean_diff_vs_logreg: 0.3561, mean_diff_vs_pca: 0.5101, logreg_vs_pca: 0.0064
+  Layer 23: mean_diff_vs_logreg: 0.3775, mean_diff_vs_pca: 0.4168, logreg_vs_pca: 0.0061
+  Layer 24: mean_diff_vs_logreg: 0.3448, mean_diff_vs_pca: 0.4818, logreg_vs_pca: 0.0053
+  Layer 25: mean_diff_vs_logreg: 0.3455, mean_diff_vs_pca: 0.1645, logreg_vs_pca: -0.0114
+
+Classification accuracy (held-out 25%):
+  Layer  0: mean_diff: 0.672, logreg: 0.844, pca: 0.520
+  Layer  1: mean_diff: 0.544, logreg: 0.860, pca: 0.492
+  Layer  2: mean_diff: 0.532, logreg: 0.856, pca: 0.496
+  Layer  3: mean_diff: 0.532, logreg: 0.872, pca: 0.508
+  Layer  4: mean_diff: 0.528, logreg: 0.844, pca: 0.536
+  Layer  5: mean_diff: 0.528, logreg: 0.824, pca: 0.552
+  Layer  6: mean_diff: 0.588, logreg: 0.772, pca: 0.580
+  Layer  7: mean_diff: 0.612, logreg: 0.696, pca: 0.604
+  Layer  8: mean_diff: 0.536, logreg: 0.692, pca: 0.528
+  Layer  9: mean_diff: 0.544, logreg: 0.676, pca: 0.544
+  Layer 10: mean_diff: 0.548, logreg: 0.680, pca: 0.540
+  Layer 11: mean_diff: 0.568, logreg: 0.740, pca: 0.552
+  Layer 12: mean_diff: 0.560, logreg: 0.740, pca: 0.564
+  Layer 13: mean_diff: 0.580, logreg: 0.764, pca: 0.568
+  Layer 14: mean_diff: 0.592, logreg: 0.724, pca: 0.580
+  Layer 15: mean_diff: 0.584, logreg: 0.780, pca: 0.564
+  Layer 16: mean_diff: 0.564, logreg: 0.836, pca: 0.564
+  Layer 17: mean_diff: 0.564, logreg: 0.864, pca: 0.540
+  Layer 18: mean_diff: 0.588, logreg: 0.860, pca: 0.540
+  Layer 19: mean_diff: 0.560, logreg: 0.872, pca: 0.528
+  Layer 20: mean_diff: 0.544, logreg: 0.884, pca: 0.524
+  Layer 21: mean_diff: 0.560, logreg: 0.884, pca: 0.516
+  Layer 22: mean_diff: 0.560, logreg: 0.888, pca: 0.504
+  Layer 23: mean_diff: 0.572, logreg: 0.884, pca: 0.504
+  Layer 24: mean_diff: 0.568, logreg: 0.880, pca: 0.516
+  Layer 25: mean_diff: 0.848, logreg: 0.868, pca: 0.488
+
+============================================================
+Processing language pair: English vs ZH
+============================================================
+Loaded eng_Latn-zho_Hans from local disk.
+Loaded 500 parallel pairs from eng_Latn-zho_Hans
+
+--- Extracting activations for English sentences (zh) ---
+Extracting activations:   0%|          | 0/63 [00:00<?, ?it/s]Extracting activations:   2%|▏         | 1/63 [00:00<00:17,  3.61it/s]Extracting activations:   3%|▎         | 2/63 [00:00<00:15,  4.03it/s]Extracting activations:   5%|▍         | 3/63 [00:00<00:14,  4.06it/s]Extracting activations:   6%|▋         | 4/63 [00:01<00:14,  3.94it/s]Extracting activations:   8%|▊         | 5/63 [00:01<00:13,  4.15it/s]Extracting activations:  10%|▉         | 6/63 [00:01<00:13,  4.15it/s]Extracting activations:  11%|█         | 7/63 [00:01<00:13,  4.04it/s]Extracting activations:  13%|█▎        | 8/63 [00:02<00:14,  3.88it/s]Extracting activations:  14%|█▍        | 9/63 [00:02<00:14,  3.85it/s]Extracting activations:  16%|█▌        | 10/63 [00:02<00:13,  3.96it/s]Extracting activations:  17%|█▋        | 11/63 [00:02<00:12,  4.04it/s]Extracting activations:  19%|█▉        | 12/63 [00:02<00:12,  4.22it/s]Extracting activations:  21%|██        | 13/63 [00:03<00:11,  4.30it/s]Extracting activations:  22%|██▏       | 14/63 [00:03<00:11,  4.37it/s]Extracting activations:  24%|██▍       | 15/63 [00:03<00:10,  4.50it/s]Extracting activations:  25%|██▌       | 16/63 [00:03<00:11,  4.23it/s]Extracting activations:  27%|██▋       | 17/63 [00:04<00:10,  4.33it/s]Extracting activations:  29%|██▊       | 18/63 [00:04<00:10,  4.31it/s]Extracting activations:  30%|███       | 19/63 [00:04<00:09,  4.42it/s]Extracting activations:  32%|███▏      | 20/63 [00:04<00:10,  4.26it/s]Extracting activations:  33%|███▎      | 21/63 [00:05<00:10,  4.20it/s]Extracting activations:  35%|███▍      | 22/63 [00:05<00:09,  4.36it/s]Extracting activations:  37%|███▋      | 23/63 [00:05<00:09,  4.43it/s]Extracting activations:  38%|███▊      | 24/63 [00:05<00:08,  4.51it/s]Extracting activations:  40%|███▉      | 25/63 [00:05<00:08,  4.57it/s]Extracting activations:  41%|████▏     | 26/63 [00:06<00:08,  4.37it/s]Extracting activations:  43%|████▎     | 27/63 [00:06<00:08,  4.31it/s]Extracting activations:  44%|████▍     | 28/63 [00:06<00:08,  4.23it/s]Extracting activations:  46%|████▌     | 29/63 [00:06<00:07,  4.33it/s]Extracting activations:  48%|████▊     | 30/63 [00:07<00:07,  4.14it/s]Extracting activations:  49%|████▉     | 31/63 [00:07<00:08,  3.86it/s]Extracting activations:  51%|█████     | 32/63 [00:07<00:07,  3.96it/s]Extracting activations:  52%|█████▏    | 33/63 [00:07<00:07,  4.10it/s]Extracting activations:  54%|█████▍    | 34/63 [00:08<00:06,  4.20it/s]Extracting activations:  56%|█████▌    | 35/63 [00:08<00:06,  4.07it/s]Extracting activations:  57%|█████▋    | 36/63 [00:08<00:06,  4.11it/s]Extracting activations:  59%|█████▊    | 37/63 [00:08<00:06,  4.18it/s]Extracting activations:  60%|██████    | 38/63 [00:09<00:05,  4.19it/s]Extracting activations:  62%|██████▏   | 39/63 [00:09<00:05,  4.26it/s]Extracting activations:  63%|██████▎   | 40/63 [00:09<00:05,  4.23it/s]Extracting activations:  65%|██████▌   | 41/63 [00:09<00:05,  4.24it/s]Extracting activations:  67%|██████▋   | 42/63 [00:10<00:04,  4.22it/s]Extracting activations:  68%|██████▊   | 43/63 [00:10<00:04,  4.28it/s]Extracting activations:  70%|██████▉   | 44/63 [00:10<00:04,  4.28it/s]Extracting activations:  71%|███████▏  | 45/63 [00:10<00:04,  4.25it/s]Extracting activations:  73%|███████▎  | 46/63 [00:10<00:04,  4.20it/s]Extracting activations:  75%|███████▍  | 47/63 [00:11<00:03,  4.07it/s]Extracting activations:  76%|███████▌  | 48/63 [00:11<00:03,  3.98it/s]Extracting activations:  78%|███████▊  | 49/63 [00:11<00:03,  4.03it/s]Extracting activations:  79%|███████▉  | 50/63 [00:11<00:03,  3.99it/s]Extracting activations:  81%|████████  | 51/63 [00:12<00:02,  4.11it/s]Extracting activations:  83%|████████▎ | 52/63 [00:12<00:02,  4.01it/s]Extracting activations:  84%|████████▍ | 53/63 [00:12<00:02,  4.08it/s]Extracting activations:  86%|████████▌ | 54/63 [00:13<00:02,  3.59it/s]Extracting activations:  87%|████████▋ | 55/63 [00:13<00:02,  3.71it/s]Extracting activations:  89%|████████▉ | 56/63 [00:13<00:01,  3.95it/s]Extracting activations:  90%|█████████ | 57/63 [00:13<00:01,  4.03it/s]Extracting activations:  92%|█████████▏| 58/63 [00:14<00:01,  4.05it/s]Extracting activations:  94%|█████████▎| 59/63 [00:14<00:01,  3.93it/s]Extracting activations:  95%|█████████▌| 60/63 [00:14<00:00,  3.87it/s]Extracting activations:  97%|█████████▋| 61/63 [00:14<00:00,  3.93it/s]Extracting activations:  98%|█████████▊| 62/63 [00:15<00:00,  3.75it/s]Extracting activations: 100%|██████████| 63/63 [00:15<00:00,  3.85it/s]Extracting activations: 100%|██████████| 63/63 [00:15<00:00,  4.11it/s]
+--- Extracting activations for zh sentences ---
+Extracting activations:   0%|          | 0/63 [00:00<?, ?it/s]Extracting activations:   2%|▏         | 1/63 [00:00<00:16,  3.69it/s]Extracting activations:   3%|▎         | 2/63 [00:00<00:16,  3.66it/s]Extracting activations:   5%|▍         | 3/63 [00:00<00:14,  4.01it/s]Extracting activations:   6%|▋         | 4/63 [00:01<00:15,  3.91it/s]Extracting activations:   8%|▊         | 5/63 [00:01<00:14,  3.99it/s]Extracting activations:  10%|▉         | 6/63 [00:01<00:14,  3.94it/s]Extracting activations:  11%|█         | 7/63 [00:01<00:14,  4.00it/s]Extracting activations:  13%|█▎        | 8/63 [00:02<00:14,  3.77it/s]Extracting activations:  14%|█▍        | 9/63 [00:02<00:13,  3.93it/s]Extracting activations:  16%|█▌        | 10/63 [00:02<00:14,  3.74it/s]Extracting activations:  17%|█▋        | 11/63 [00:02<00:13,  3.77it/s]Extracting activations:  19%|█▉        | 12/63 [00:03<00:13,  3.85it/s]Extracting activations:  21%|██        | 13/63 [00:03<00:12,  3.98it/s]Extracting activations:  22%|██▏       | 14/63 [00:03<00:12,  3.90it/s]Extracting activations:  24%|██▍       | 15/63 [00:03<00:11,  4.14it/s]Extracting activations:  25%|██▌       | 16/63 [00:04<00:12,  3.84it/s]Extracting activations:  27%|██▋       | 17/63 [00:04<00:11,  4.00it/s]Extracting activations:  29%|██▊       | 18/63 [00:04<00:11,  3.94it/s]Extracting activations:  30%|███       | 19/63 [00:04<00:10,  4.16it/s]Extracting activations:  32%|███▏      | 20/63 [00:05<00:10,  4.05it/s]Extracting activations:  33%|███▎      | 21/63 [00:05<00:10,  4.19it/s]Extracting activations:  35%|███▍      | 22/63 [00:05<00:09,  4.23it/s]Extracting activations:  37%|███▋      | 23/63 [00:05<00:09,  4.25it/s]Extracting activations:  38%|███▊      | 24/63 [00:06<00:09,  4.20it/s]Extracting activations:  40%|███▉      | 25/63 [00:06<00:09,  4.14it/s]Extracting activations:  41%|████▏     | 26/63 [00:06<00:08,  4.15it/s]Extracting activations:  43%|████▎     | 27/63 [00:06<00:08,  4.13it/s]Extracting activations:  44%|████▍     | 28/63 [00:06<00:08,  4.25it/s]Extracting activations:  46%|████▌     | 29/63 [00:07<00:07,  4.39it/s]Extracting activations:  48%|████▊     | 30/63 [00:07<00:07,  4.32it/s]Extracting activations:  49%|████▉     | 31/63 [00:07<00:07,  4.21it/s]Extracting activations:  51%|█████     | 32/63 [00:07<00:07,  4.12it/s]Extracting activations:  52%|█████▏    | 33/63 [00:08<00:07,  4.17it/s]Extracting activations:  54%|█████▍    | 34/63 [00:08<00:07,  4.07it/s]Extracting activations:  56%|█████▌    | 35/63 [00:08<00:06,  4.01it/s]Extracting activations:  57%|█████▋    | 36/63 [00:08<00:06,  4.02it/s]Extracting activations:  59%|█████▊    | 37/63 [00:09<00:06,  4.20it/s]Extracting activations:  60%|██████    | 38/63 [00:09<00:06,  4.15it/s]Extracting activations:  62%|██████▏   | 39/63 [00:09<00:05,  4.24it/s]Extracting activations:  63%|██████▎   | 40/63 [00:09<00:05,  4.36it/s]Extracting activations:  65%|██████▌   | 41/63 [00:10<00:05,  4.38it/s]Extracting activations:  67%|██████▋   | 42/63 [00:10<00:04,  4.39it/s]Extracting activations:  68%|██████▊   | 43/63 [00:10<00:04,  4.13it/s]Extracting activations:  70%|██████▉   | 44/63 [00:10<00:04,  4.35it/s]Extracting activations:  71%|███████▏  | 45/63 [00:10<00:04,  4.36it/s]Extracting activations:  73%|███████▎  | 46/63 [00:11<00:04,  4.15it/s]Extracting activations:  75%|███████▍  | 47/63 [00:11<00:04,  3.94it/s]Extracting activations:  76%|███████▌  | 48/63 [00:11<00:03,  3.90it/s]Extracting activations:  78%|███████▊  | 49/63 [00:12<00:03,  4.03it/s]Extracting activations:  79%|███████▉  | 50/63 [00:12<00:03,  4.21it/s]Extracting activations:  81%|████████  | 51/63 [00:12<00:02,  4.25it/s]Extracting activations:  83%|████████▎ | 52/63 [00:12<00:02,  4.17it/s]Extracting activations:  84%|████████▍ | 53/63 [00:12<00:02,  4.14it/s]Extracting activations:  86%|████████▌ | 54/63 [00:13<00:02,  3.77it/s]Extracting activations:  87%|████████▋ | 55/63 [00:13<00:02,  3.81it/s]Extracting activations:  89%|████████▉ | 56/63 [00:13<00:01,  3.95it/s]Extracting activations:  90%|█████████ | 57/63 [00:14<00:01,  3.72it/s]Extracting activations:  92%|█████████▏| 58/63 [00:14<00:01,  3.85it/s]Extracting activations:  94%|█████████▎| 59/63 [00:14<00:01,  3.74it/s]Extracting activations:  95%|█████████▌| 60/63 [00:14<00:00,  3.72it/s]Extracting activations:  97%|█████████▋| 61/63 [00:15<00:00,  3.79it/s]Extracting activations:  98%|█████████▊| 62/63 [00:15<00:00,  3.39it/s]Extracting activations: 100%|██████████| 63/63 [00:15<00:00,  3.71it/s]Extracting activations: 100%|██████████| 63/63 [00:15<00:00,  4.01it/s]
+Train/test split: 375 train, 125 test
+--- Computing directions at each layer (pooling=mean) ---
+Layers:   0%|          | 0/26 [00:00<?, ?it/s]Layers:   4%|▍         | 1/26 [00:00<00:14,  1.70it/s]Layers:   8%|▊         | 2/26 [00:01<00:14,  1.63it/s]Layers:  12%|█▏        | 3/26 [00:01<00:14,  1.56it/s]Layers:  15%|█▌        | 4/26 [00:02<00:14,  1.53it/s]Layers:  19%|█▉        | 5/26 [00:03<00:14,  1.49it/s]Layers:  23%|██▎       | 6/26 [00:03<00:13,  1.48it/s]Layers:  27%|██▋       | 7/26 [00:04<00:12,  1.49it/s]Layers:  31%|███       | 8/26 [00:05<00:12,  1.49it/s]Layers:  35%|███▍      | 9/26 [00:05<00:11,  1.50it/s]Layers:  38%|███▊      | 10/26 [00:06<00:10,  1.48it/s]Layers:  42%|████▏     | 11/26 [00:07<00:10,  1.49it/s]Layers:  46%|████▌     | 12/26 [00:07<00:09,  1.49it/s]Layers:  50%|█████     | 13/26 [00:08<00:08,  1.54it/s]Layers:  54%|█████▍    | 14/26 [00:09<00:07,  1.56it/s]Layers:  58%|█████▊    | 15/26 [00:09<00:06,  1.61it/s]Layers:  62%|██████▏   | 16/26 [00:10<00:06,  1.62it/s]Layers:  65%|██████▌   | 17/26 [00:10<00:05,  1.63it/s]Layers:  69%|██████▉   | 18/26 [00:11<00:04,  1.63it/s]Layers:  73%|███████▎  | 19/26 [00:12<00:04,  1.66it/s]Layers:  77%|███████▋  | 20/26 [00:12<00:03,  1.65it/s]Layers:  81%|████████  | 21/26 [00:13<00:03,  1.64it/s]Layers:  85%|████████▍ | 22/26 [00:14<00:02,  1.60it/s]Layers:  88%|████████▊ | 23/26 [00:14<00:01,  1.61it/s]Layers:  92%|█████████▏| 24/26 [00:15<00:01,  1.63it/s]Layers:  96%|█████████▌| 25/26 [00:15<00:00,  1.64it/s]Layers: 100%|██████████| 26/26 [00:16<00:00,  1.63it/s]Layers: 100%|██████████| 26/26 [00:16<00:00,  1.58it/s]
+Saved directions, convergence, and accuracy for zh
+
+Convergence (pairwise cosine sim between methods):
+  Layer  0: mean_diff_vs_logreg: 0.1884, mean_diff_vs_pca: 0.8695, logreg_vs_pca: -0.0127
+  Layer  1: mean_diff_vs_logreg: 0.2039, mean_diff_vs_pca: 0.8799, logreg_vs_pca: -0.0072
+  Layer  2: mean_diff_vs_logreg: 0.1983, mean_diff_vs_pca: 0.8907, logreg_vs_pca: 0.0024
+  Layer  3: mean_diff_vs_logreg: 0.1236, mean_diff_vs_pca: 0.9567, logreg_vs_pca: -0.0032
+  Layer  4: mean_diff_vs_logreg: 0.1088, mean_diff_vs_pca: 0.9735, logreg_vs_pca: -0.0035
+  Layer  5: mean_diff_vs_logreg: 0.0982, mean_diff_vs_pca: 0.9736, logreg_vs_pca: -0.0127
+  Layer  6: mean_diff_vs_logreg: 0.1278, mean_diff_vs_pca: 0.9183, logreg_vs_pca: -0.0040
+  Layer  7: mean_diff_vs_logreg: 0.1161, mean_diff_vs_pca: 0.9533, logreg_vs_pca: 0.0200
+  Layer  8: mean_diff_vs_logreg: 0.1073, mean_diff_vs_pca: 0.9870, logreg_vs_pca: 0.0426
+  Layer  9: mean_diff_vs_logreg: 0.1024, mean_diff_vs_pca: 0.9914, logreg_vs_pca: 0.0430
+  Layer 10: mean_diff_vs_logreg: 0.1260, mean_diff_vs_pca: 0.9776, logreg_vs_pca: 0.0476
+  Layer 11: mean_diff_vs_logreg: 0.1129, mean_diff_vs_pca: 0.9803, logreg_vs_pca: 0.0329
+  Layer 12: mean_diff_vs_logreg: 0.1085, mean_diff_vs_pca: 0.9826, logreg_vs_pca: 0.0241
+  Layer 13: mean_diff_vs_logreg: 0.1176, mean_diff_vs_pca: 0.9793, logreg_vs_pca: 0.0169
+  Layer 14: mean_diff_vs_logreg: 0.1490, mean_diff_vs_pca: 0.9680, logreg_vs_pca: 0.0400
+  Layer 15: mean_diff_vs_logreg: 0.1928, mean_diff_vs_pca: 0.9432, logreg_vs_pca: 0.0349
+  Layer 16: mean_diff_vs_logreg: 0.2181, mean_diff_vs_pca: 0.9260, logreg_vs_pca: 0.0269
+  Layer 17: mean_diff_vs_logreg: 0.2541, mean_diff_vs_pca: 0.9039, logreg_vs_pca: 0.0336
+  Layer 18: mean_diff_vs_logreg: 0.2926, mean_diff_vs_pca: 0.8654, logreg_vs_pca: 0.0069
+  Layer 19: mean_diff_vs_logreg: 0.2908, mean_diff_vs_pca: 0.8690, logreg_vs_pca: 0.0216
+  Layer 20: mean_diff_vs_logreg: 0.2868, mean_diff_vs_pca: 0.8801, logreg_vs_pca: 0.0236
+  Layer 21: mean_diff_vs_logreg: 0.3095, mean_diff_vs_pca: 0.8685, logreg_vs_pca: 0.0433
+  Layer 22: mean_diff_vs_logreg: 0.3028, mean_diff_vs_pca: 0.8531, logreg_vs_pca: 0.0248
+  Layer 23: mean_diff_vs_logreg: 0.3133, mean_diff_vs_pca: 0.8322, logreg_vs_pca: 0.0050
+  Layer 24: mean_diff_vs_logreg: 0.2814, mean_diff_vs_pca: 0.8491, logreg_vs_pca: 0.0207
+  Layer 25: mean_diff_vs_logreg: 0.4151, mean_diff_vs_pca: 0.5185, logreg_vs_pca: -0.0050
+
+Classification accuracy (held-out 25%):
+  Layer  0: mean_diff: 0.540, logreg: 0.820, pca: 0.540
+  Layer  1: mean_diff: 0.544, logreg: 0.836, pca: 0.536
+  Layer  2: mean_diff: 0.540, logreg: 0.872, pca: 0.540
+  Layer  3: mean_diff: 0.548, logreg: 0.844, pca: 0.544
+  Layer  4: mean_diff: 0.552, logreg: 0.824, pca: 0.560
+  Layer  5: mean_diff: 0.568, logreg: 0.824, pca: 0.568
+  Layer  6: mean_diff: 0.556, logreg: 0.840, pca: 0.568
+  Layer  7: mean_diff: 0.564, logreg: 0.800, pca: 0.576
+  Layer  8: mean_diff: 0.568, logreg: 0.728, pca: 0.560
+  Layer  9: mean_diff: 0.572, logreg: 0.700, pca: 0.564
+  Layer 10: mean_diff: 0.568, logreg: 0.688, pca: 0.564
+  Layer 11: mean_diff: 0.580, logreg: 0.792, pca: 0.580
+  Layer 12: mean_diff: 0.596, logreg: 0.848, pca: 0.584
+  Layer 13: mean_diff: 0.596, logreg: 0.860, pca: 0.596
+  Layer 14: mean_diff: 0.596, logreg: 0.820, pca: 0.600
+  Layer 15: mean_diff: 0.580, logreg: 0.840, pca: 0.584
+  Layer 16: mean_diff: 0.564, logreg: 0.856, pca: 0.560
+  Layer 17: mean_diff: 0.568, logreg: 0.860, pca: 0.572
+  Layer 18: mean_diff: 0.568, logreg: 0.872, pca: 0.568
+  Layer 19: mean_diff: 0.560, logreg: 0.864, pca: 0.560
+  Layer 20: mean_diff: 0.548, logreg: 0.888, pca: 0.548
+  Layer 21: mean_diff: 0.552, logreg: 0.884, pca: 0.544
+  Layer 22: mean_diff: 0.552, logreg: 0.884, pca: 0.544
+  Layer 23: mean_diff: 0.552, logreg: 0.884, pca: 0.536
+  Layer 24: mean_diff: 0.556, logreg: 0.884, pca: 0.544
+  Layer 25: mean_diff: 0.676, logreg: 0.840, pca: 0.544
+
+============================================================
+Cross-language direction consistency analysis
+============================================================
+Saved cross-language consistency to: /home/huang717/cs601r/final_project/results/directions/cross_language_consistency.json
+
+  Method: mean_diff
+    Layer  0: avg cross-lang cosine = 0.1629
+    Layer  1: avg cross-lang cosine = 0.2819
+    Layer  2: avg cross-lang cosine = 0.5129
+    Layer  3: avg cross-lang cosine = 0.7925
+    Layer  4: avg cross-lang cosine = 0.8849
+    Layer  5: avg cross-lang cosine = 0.9309
+    Layer  6: avg cross-lang cosine = 0.9359
+    Layer  7: avg cross-lang cosine = 0.9660
+    Layer  8: avg cross-lang cosine = 0.9818
+    Layer  9: avg cross-lang cosine = 0.9865
+    Layer 10: avg cross-lang cosine = 0.9766
+    Layer 11: avg cross-lang cosine = 0.9774
+    Layer 12: avg cross-lang cosine = 0.9786
+    Layer 13: avg cross-lang cosine = 0.9727
+    Layer 14: avg cross-lang cosine = 0.9614
+    Layer 15: avg cross-lang cosine = 0.9254
+    Layer 16: avg cross-lang cosine = 0.9001
+    Layer 17: avg cross-lang cosine = 0.8570
+    Layer 18: avg cross-lang cosine = 0.8095
+    Layer 19: avg cross-lang cosine = 0.7532
+    Layer 20: avg cross-lang cosine = 0.7208
+    Layer 21: avg cross-lang cosine = 0.4866
+    Layer 22: avg cross-lang cosine = 0.3878
+    Layer 23: avg cross-lang cosine = 0.3049
+    Layer 24: avg cross-lang cosine = 0.4234
+    Layer 25: avg cross-lang cosine = 0.4985
+
+  Method: logreg
+    Layer  0: avg cross-lang cosine = 0.3763
+    Layer  1: avg cross-lang cosine = 0.3887
+    Layer  2: avg cross-lang cosine = 0.3937
+    Layer  3: avg cross-lang cosine = 0.4435
+    Layer  4: avg cross-lang cosine = 0.4615
+    Layer  5: avg cross-lang cosine = 0.4036
+    Layer  6: avg cross-lang cosine = 0.4365
+    Layer  7: avg cross-lang cosine = 0.4611
+    Layer  8: avg cross-lang cosine = 0.5014
+    Layer  9: avg cross-lang cosine = 0.4814
+    Layer 10: avg cross-lang cosine = 0.4126
+    Layer 11: avg cross-lang cosine = 0.4050
+    Layer 12: avg cross-lang cosine = 0.4134
+    Layer 13: avg cross-lang cosine = 0.3742
+    Layer 14: avg cross-lang cosine = 0.3721
+    Layer 15: avg cross-lang cosine = 0.3750
+    Layer 16: avg cross-lang cosine = 0.3820
+    Layer 17: avg cross-lang cosine = 0.4002
+    Layer 18: avg cross-lang cosine = 0.3600
+    Layer 19: avg cross-lang cosine = 0.3737
+    Layer 20: avg cross-lang cosine = 0.3741
+    Layer 21: avg cross-lang cosine = 0.3555
+    Layer 22: avg cross-lang cosine = 0.3707
+    Layer 23: avg cross-lang cosine = 0.3576
+    Layer 24: avg cross-lang cosine = 0.3593
+    Layer 25: avg cross-lang cosine = 0.3671
+
+  Method: pca
+    Layer  0: avg cross-lang cosine = -0.3317
+    Layer  1: avg cross-lang cosine = -0.3326
+    Layer  2: avg cross-lang cosine = -0.3327
+    Layer  3: avg cross-lang cosine = 0.9991
+    Layer  4: avg cross-lang cosine = 0.9983
+    Layer  5: avg cross-lang cosine = 0.9960
+    Layer  6: avg cross-lang cosine = 0.9974
+    Layer  7: avg cross-lang cosine = 0.9990
+    Layer  8: avg cross-lang cosine = 0.9991
+    Layer  9: avg cross-lang cosine = 0.9994
+    Layer 10: avg cross-lang cosine = 0.9991
+    Layer 11: avg cross-lang cosine = 0.9992
+    Layer 12: avg cross-lang cosine = 0.9991
+    Layer 13: avg cross-lang cosine = 0.9992
+    Layer 14: avg cross-lang cosine = 0.9986
+    Layer 15: avg cross-lang cosine = 0.9986
+    Layer 16: avg cross-lang cosine = 0.9979
+    Layer 17: avg cross-lang cosine = 0.9972
+    Layer 18: avg cross-lang cosine = 0.9968
+    Layer 19: avg cross-lang cosine = 0.9967
+    Layer 20: avg cross-lang cosine = 0.9971
+    Layer 21: avg cross-lang cosine = 0.9938
+    Layer 22: avg cross-lang cosine = 0.9922
+    Layer 23: avg cross-lang cosine = -0.3277
+    Layer 24: avg cross-lang cosine = 0.9933
+    Layer 25: avg cross-lang cosine = -0.3242
+
+Phase 1 complete. Directions saved to: /home/huang717/cs601r/final_project/results/directions
