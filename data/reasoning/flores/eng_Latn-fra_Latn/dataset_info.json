@@ -1,0 +1,72 @@
+{
+  "builder_name": "flores",
+  "citation": "\n@article{nllb2022,\n  author    = {NLLB Team, Marta R. Costa-juss\u00e0, James Cross, Onur \u00c7elebi, Maha Elbayad, Kenneth Heafield, Kevin Heffernan, Elahe Kalbassi,  Janice Lam, Daniel Licht, Jean Maillard, Anna Sun, Skyler Wang, Guillaume Wenzek, Al Youngblood, Bapi Akula, Loic Barrault, Gabriel Mejia Gonzalez, Prangthip Hansanti, John Hoffman, Semarley Jarrett, Kaushik Ram Sadagopan, Dirk Rowe, Shannon Spruit, Chau Tran, Pierre Andrews, Necip Fazil Ayan, Shruti Bhosale, Sergey Edunov, Angela Fan, Cynthia Gao, Vedanuj Goswami, Francisco Guzm\u00e1n, Philipp Koehn, Alexandre Mourachko, Christophe Ropers, Safiyyah Saleem, Holger Schwenk, Jeff Wang},\n  title     = {No Language Left Behind: Scaling Human-Centered Machine Translation},\n  year      = {2022}\n}\n\n@inproceedings{,\n  title={The FLORES-101  Evaluation Benchmark for Low-Resource and Multilingual Machine Translation},\n  author={Goyal, Naman and Gao, Cynthia and Chaudhary, Vishrav and Chen, Peng-Jen and Wenzek, Guillaume and Ju, Da and Krishnan, Sanjana and Ranzato, Marc'Aurelio and Guzm'{a}n, Francisco and Fan, Angela},\n  year={2021}\n}\n\n@inproceedings{,\n  title={Two New Evaluation Datasets for Low-Resource Machine Translation: Nepali-English and Sinhala-English},\n  author={Guzm'{a}n, Francisco and Chen, Peng-Jen and Ott, Myle and Pino, Juan and Lample, Guillaume and Koehn, Philipp and Chaudhary, Vishrav and Ranzato, Marc'Aurelio},\n  journal={arXiv preprint arXiv:1902.01382},\n  year={2019}\n}\n",
+  "config_name": "eng_Latn-fra_Latn",
+  "dataset_name": "flores",
+  "dataset_size": 828017,
+  "description": "The creation of FLORES-200 doubles the existing language coverage of FLORES-101. \nGiven the nature of the new languages, which have less standardization and require \nmore specialized professional translations, the verification process became more complex. \nThis required modifications to the translation workflow. FLORES-200 has several languages \nwhich were not translated from English. Specifically, several languages were translated \nfrom Spanish, French, Russian and Modern Standard Arabic. Moreover, FLORES-200 also \nincludes two script alternatives for four languages. FLORES-200 consists of translations \nfrom 842 distinct web articles, totaling 3001 sentences. These sentences are divided \ninto three splits: dev, devtest, and test (hidden). On average, sentences are approximately \n21 words long.\n",
+  "download_checksums": {
+    "https://tinyurl.com/flores200dataset": {
+      "num_bytes": 25585843,
+      "checksum": null
+    }
+  },
+  "download_size": 25585843,
+  "features": {
+    "id": {
+      "dtype": "int32",
+      "_type": "Value"
+    },
+    "URL": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "domain": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "topic": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "has_image": {
+      "dtype": "int32",
+      "_type": "Value"
+    },
+    "has_hyperlink": {
+      "dtype": "int32",
+      "_type": "Value"
+    },
+    "sentence_eng_Latn": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "sentence_fra_Latn": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "https://github.com/facebookresearch/flores",
+  "license": "CC-BY-SA-4.0",
+  "size_in_bytes": 26413860,
+  "splits": {
+    "dev": {
+      "name": "dev",
+      "num_bytes": 404049,
+      "num_examples": 997,
+      "dataset_name": "flores"
+    },
+    "devtest": {
+      "name": "devtest",
+      "num_bytes": 423968,
+      "num_examples": 1012,
+      "dataset_name": "flores"
+    }
+  },
+  "version": {
+    "version_str": "1.0.0",
+    "major": 1,
+    "minor": 0,
+    "patch": 0
+  }
+}

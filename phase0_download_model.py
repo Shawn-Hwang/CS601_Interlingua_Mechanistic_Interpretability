@@ -10,14 +10,15 @@ Usage:
 """
 
 import torch
+from datasets import load_dataset, load_from_disk
 import config
 import utils
 
 
 SAMPLE_PROMPTS = [
     "The capital of France is",
-    "2 + 2 equals",
-    "What is machine learning?",
+    # "2 + 2 equals",
+    # "What is machine learning?",
 ]
 
 
@@ -43,6 +44,23 @@ def run_sample_generations(model) -> None:
         print()
 
 
+def download_flores_datasets() -> None:
+    """Download and save FLORES splits to disk for offline use on GPU machine."""
+    config.ensure_dirs()
+    for label, flores_cfg in config.FLORES_CONFIGS.items():
+        local_path = config.DATA_DIR / "flores" / flores_cfg.replace("/", "_")
+        if local_path.exists():
+            print(f"FLORES {label} already cached at {local_path}")
+            continue
+        print(f"Downloading FLORES {label} ({flores_cfg})...")
+        dataset = load_dataset(
+            config.FLORES_DATASET, flores_cfg, split=config.FLORES_SPLIT,
+            trust_remote_code=True,
+        )
+        dataset.save_to_disk(str(local_path))
+        print(f"Saved to {local_path}")
+
+
 def main():
     print(f"Downloading / loading model: {config.MODEL_NAME}")
     print(f"Device: {config.DEVICE}")
@@ -53,6 +71,9 @@ def main():
     verify_model_config(model)
 
     run_sample_generations(model)
+
+    print("\nDownloading FLORES datasets for offline use...")
+    download_flores_datasets()
 
     print("Phase 0 complete. Model is ready for use in subsequent phases.")
 

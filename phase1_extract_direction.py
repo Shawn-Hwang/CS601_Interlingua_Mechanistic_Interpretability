@@ -12,7 +12,7 @@ Usage:
 
 import json
 import torch
-from datasets import load_dataset
+from datasets import load_dataset, load_from_disk
 from tqdm import tqdm
 
 import config
@@ -29,9 +29,16 @@ def load_flores_pairs(flores_config: str) -> tuple[list[str], list[str]]:
     Returns:
         (english_sentences, other_language_sentences)
     """
-    dataset = load_dataset(
-        config.FLORES_DATASET, flores_config, split=config.FLORES_SPLIT
-    )
+    local_path = config.DATA_DIR / "flores" / flores_config.replace("/", "_")
+    try:
+        dataset = load_from_disk(str(local_path))
+        print(f"Loaded {flores_config} from local disk.")
+    except Exception:
+        print(f"Downloading {flores_config} from HuggingFace...")
+        dataset = load_dataset(
+            config.FLORES_DATASET, flores_config, split=config.FLORES_SPLIT
+        )
+        dataset.save_to_disk(str(local_path))
 
     # Column names follow the pattern: sentence_{lang_code}
     lang_codes = flores_config.split("-")

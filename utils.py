@@ -16,6 +16,7 @@ from typing import Callable
 from transformer_lens import HookedTransformer
 from transformer_lens.hook_points import HookPoint
 from sklearn.linear_model import LogisticRegression
+from sklearn.preprocessing import StandardScaler
 from tqdm import tqdm
 
 import config
@@ -27,7 +28,12 @@ def load_model(model_name: str | None = None) -> HookedTransformer:
     """Load a TransformerLens model in eval mode on the configured device."""
     name = model_name or config.MODEL_NAME
     print(f"Loading model: {name} on {config.DEVICE}")
-    model = HookedTransformer.from_pretrained(name, device=config.DEVICE)
+    try:
+        model = HookedTransformer.from_pretrained(name, device=config.DEVICE, local_files_only=True)
+        print("Loaded from local cache.")
+    except Exception:
+        print("Local cache not found, downloading from HuggingFace...")
+        model = HookedTransformer.from_pretrained(name, device=config.DEVICE)
     model.eval()
     return model
 
@@ -168,7 +174,9 @@ def compute_direction_logreg(
     X = torch.cat([en_acts, other_acts], dim=0).numpy()
     y = np.concatenate([np.ones(len(en_acts)), np.zeros(len(other_acts))])
 
-    clf = LogisticRegression(max_iter=1000, solver="lbfgs")
+    clf = LogisticRegression(max_iter=5000, solver="lbfgs")
+    scaler = StandardScaler()
+    X = scaler.fit_transform(X)
     clf.fit(X, y)
 
     w = torch.tensor(clf.coef_[0], dtype=en_acts.dtype)
