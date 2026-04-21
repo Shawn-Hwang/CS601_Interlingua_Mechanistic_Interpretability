@@ -5,7 +5,9 @@ Produces:
 1. Activation colormaps showing the projection of residual stream activations
    onto the English direction at each (layer, token) position for Spanish input.
 2. Layer-by-layer accuracy curves from Phase 3 ablation results.
-3. Convergence plots (cosine similarity between mean_diff and logreg directions).
+3. Convergence plots (pairwise cosine similarity between direction methods).
+4. Classification accuracy plots (held-out accuracy per method per layer).
+5. Cross-language consistency plots (direction similarity across language pairs).
 
 Usage:
     python phase4_visualize.py
@@ -192,33 +194,79 @@ def plot_accuracy_curves():
 
 def plot_convergence():
     """
-    Plot cosine similarity between mean_diff and logreg directions at each layer,
-    for each language pair.
+    Plot pairwise cosine similarity between direction methods at each layer.
+    Handles both old format ({layer: float}) and new format ({layer: {pair: float}}).
     """
-    fig, ax = plt.subplots(figsize=(8, 5))
+    lang_labels = {"es": "ES", "fr": "FR", "zh": "ZH"}
+    pair_colors = {
+        "mean_diff_vs_logreg": "tab:blue",
+        "mean_diff_vs_pca": "tab:orange",
+        "logreg_vs_pca": "tab:green",
+    }
 
-    lang_colors = {"es": "red", "fr": "blue", "zh": "green"}
-
-    for lang, color in lang_colors.items():
+    # Detect format from first available file
+    available_langs = []
+    for lang in lang_labels:
         conv_path = config.DIRECTIONS_DIR / f"convergence_{lang}.json"
-        if not conv_path.exists():
-            continue
+        if conv_path.exists():
+            available_langs.append(lang)
 
-        with open(conv_path, "r") as f:
-            cosine_sims = json.load(f)
+    if not available_langs:
+        print("  Skipping convergence plot: no data found")
+        return
 
-        layers = sorted(int(k) for k in cosine_sims.keys())
-        sims = [cosine_sims[str(l)] for l in layers]
+    with open(config.DIRECTIONS_DIR / f"convergence_{available_langs[0]}.json") as f:
+        sample = json.load(f)
+    sample_val = list(sample.values())[0]
+    is_new_format = isinstance(sample_val, dict)
 
-        ax.plot(layers, sims, label=f"EN vs {lang.upper()}", color=color, marker="o", markersize=4)
+    if is_new_format:
+        # New format: one subplot per language, 3 method-pair lines each
+        n_langs = len(available_langs)
+        fig, axes = plt.subplots(1, n_langs, figsize=(6 * n_langs, 5))
+        if n_langs == 1:
+            axes = [axes]
 
-    ax.set_xlabel("Layer")
-    ax.set_ylabel("Cosine Similarity (mean_diff vs logreg)")
-    ax.set_title("Direction Extraction Convergence")
-    ax.legend()
-    ax.set_ylim(-0.1, 1.1)
-    ax.grid(True, alpha=0.3)
-    ax.axhline(y=0.5, color="gray", linestyle="--", alpha=0.5, label="0.5 threshold")
+        for ax, lang in zip(axes, available_langs):
+            conv_path = config.DIRECTIONS_DIR / f"convergence_{lang}.json"
+            with open(conv_path, "r") as f:
+                data = json.load(f)
+
+            layers = sorted(int(k) for k in data.keys())
+
+            for pair_name, color in pair_colors.items():
+                sims = [data[str(l)].get(pair_name, 0.0) for l in layers]
+                ax.plot(
+                    layers, sims, label=pair_name.replace("_vs_", " vs "),
+                    color=color, marker="o", markersize=3,
+                )
+
+            ax.set_xlabel("Layer")
+            ax.set_ylabel("Cosine Similarity")
+            ax.set_title(f"Method Convergence — EN vs {lang_labels[lang]}")
+            ax.legend(fontsize=7)
+            ax.set_ylim(-0.1, 1.1)
+            ax.grid(True, alpha=0.3)
+    else:
+        # Old format: single plot, one line per language
+        fig, ax = plt.subplots(figsize=(8, 5))
+        old_colors = {"es": "red", "fr": "blue", "zh": "green"}
+        for lang in available_langs:
+            conv_path = config.DIRECTIONS_DIR / f"convergence_{lang}.json"
+            with open(conv_path, "r") as f:
+                data = json.load(f)
+            layers = sorted(int(k) for k in data.keys())
+            sims = [data[str(l)] for l in layers]
+            ax.plot(
+                layers, sims, label=f"EN vs {lang_labels[lang]}",
+                color=old_colors.get(lang, "gray"), marker="o", markersize=4,
+            )
+        ax.set_xlabel("Layer")
+        ax.set_ylabel("Cosine Similarity (mean_diff vs logreg)")
+        ax.set_title("Direction Extraction Convergence")
+        ax.legend()
+        ax.set_ylim(-0.1, 1.1)
+        ax.grid(True, alpha=0.3)
 
     plt.tight_layout()
     save_path = config.PLOTS_DIR / "convergence.png"
@@ -269,6 +317,115 @@ def plot_mean_projection_profile(model, directions: dict[int, torch.Tensor]):
     print(f"  Saved projection profile: {save_path}")
 
 
+# ── Classification accuracy plots ────────────────────────────────────────────
+
+def plot_classification_accuracy():
+    """
+    Plot held-out classification accuracy per method per layer.
+    One subplot per language pair.
+    """
+    lang_labels = {"es": "ES", "fr": "FR", "zh": "ZH"}
+    method_styles = {
+        "mean_diff": ("-", "tab:blue"),
+        "logreg": ("--", "tab:orange"),
+        "pca": (":", "tab:green"),
+    }
+
+    available_langs = []
+    for lang in lang_labels:
+        path = config.DIRECTIONS_DIR / f"classification_accuracy_{lang}.json"
+        if path.exists():
+            available_langs.append(lang)
+
+    if not available_langs:
+        print("  Skipping classification accuracy plot: no data found")
+        return
+
+    n_langs = len(available_langs)
+    fig, axes = plt.subplots(1, n_langs, figsize=(6 * n_langs, 5))
+    if n_langs == 1:
+        axes = [axes]
+
+    for ax, lang in zip(axes, available_langs):
+        acc_path = config.DIRECTIONS_DIR / f"classification_accuracy_{lang}.json"
+        with open(acc_path, "r") as f:
+            acc_data = json.load(f)
+
+        layers = sorted(int(k) for k in acc_data.keys())
+
+        for method, (linestyle, color) in method_styles.items():
+            accs = [acc_data[str(l)].get(method, 0.0) for l in layers]
+            ax.plot(
+                layers, accs, label=method,
+                linestyle=linestyle, color=color, marker="o", markersize=3,
+            )
+
+        ax.set_xlabel("Layer")
+        ax.set_ylabel("Classification Accuracy")
+        ax.set_title(f"Held-out Accuracy — EN vs {lang_labels[lang]}")
+        ax.legend(fontsize=8)
+        ax.set_ylim(0.4, 1.05)
+        ax.grid(True, alpha=0.3)
+        ax.axhline(y=0.5, color="gray", linestyle="--", alpha=0.5)
+
+    plt.tight_layout()
+    save_path = config.PLOTS_DIR / "classification_accuracy.png"
+    plt.savefig(save_path, bbox_inches="tight")
+    plt.close()
+    print(f"  Saved classification accuracy plot: {save_path}")
+
+
+# ── Cross-language consistency plots ─────────────────────────────────────────
+
+def plot_cross_language_consistency():
+    """
+    Plot cross-language direction similarity per method.
+    One subplot per method, with lines for each language pair.
+    """
+    cross_path = config.DIRECTIONS_DIR / "cross_language_consistency.json"
+    if not cross_path.exists():
+        print("  Skipping cross-language plot: data not found")
+        return
+
+    with open(cross_path, "r") as f:
+        data = json.load(f)
+
+    methods = list(data.keys())
+    pair_colors = {
+        "es_vs_fr": "tab:purple",
+        "es_vs_zh": "tab:orange",
+        "fr_vs_zh": "tab:cyan",
+    }
+
+    fig, axes = plt.subplots(1, len(methods), figsize=(6 * len(methods), 5))
+    if len(methods) == 1:
+        axes = [axes]
+
+    for ax, method in zip(axes, methods):
+        layers = sorted(int(k) for k in data[method].keys())
+
+        for pair_name, color in pair_colors.items():
+            sims = [data[method][str(l)].get(pair_name, 0.0) for l in layers]
+            ax.plot(
+                layers, sims,
+                label=pair_name.replace("_vs_", " vs ").upper(),
+                color=color, marker="o", markersize=3,
+            )
+
+        ax.set_xlabel("Layer")
+        ax.set_ylabel("Cosine Similarity")
+        ax.set_title(f"Cross-Language Consistency — {method}")
+        ax.legend(fontsize=8)
+        ax.set_ylim(-0.1, 1.1)
+        ax.grid(True, alpha=0.3)
+
+    plt.tight_layout()
+    save_path = config.PLOTS_DIR / "cross_language_consistency.png"
+    plt.savefig(save_path, bbox_inches="tight")
+    plt.close()
+    print(f"  Saved cross-language consistency plot: {save_path}")
+
+
 # ── Main ─────────────────────────────────────────────────────────────────────
 
 def main():
@@ -303,6 +460,12 @@ def main():
 
     print("\n--- Plotting convergence ---")
     plot_convergence()
+
+    print("\n--- Plotting classification accuracy ---")
+    plot_classification_accuracy()
+
+    print("\n--- Plotting cross-language consistency ---")
+    plot_cross_language_consistency()
 
     print("\n--- Plotting mean projection profile ---")
     plot_mean_projection_profile(model, directions)

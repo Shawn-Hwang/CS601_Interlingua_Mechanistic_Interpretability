@@ -139,6 +139,54 @@ def average_over_positions(
     return masked_sum / counts
 
 
+def last_token_activation(
+    activations: torch.Tensor, mask: torch.Tensor
+) -> torch.Tensor:
+    """
+    Extract the activation at the last content token position.
+
+    Args:
+        activations: [batch, seq_len, d_model]
+        mask: [batch, seq_len] boolean, True = content position
+
+    Returns:
+        [batch, d_model]
+    """
+    batch_size = activations.shape[0]
+    d_model = activations.shape[2]
+    result = torch.zeros(batch_size, d_model)
+    for i in range(batch_size):
+        valid_positions = mask[i].nonzero(as_tuple=True)[0]
+        if len(valid_positions) > 0:
+            last_pos = valid_positions[-1].item()
+            result[i] = activations[i, last_pos]
+        else:
+            result[i] = activations[i, 0]
+    return result
+
+
+def pool_activations(
+    activations: torch.Tensor, mask: torch.Tensor, strategy: str = "mean"
+) -> torch.Tensor:
+    """
+    Pool activations over token positions using the specified strategy.
+
+    Args:
+        activations: [batch, seq_len, d_model]
+        mask: [batch, seq_len] boolean
+        strategy: "mean" or "last_token"
+
+    Returns:
+        [batch, d_model]
+    """
+    if strategy == "mean":
+        return average_over_positions(activations, mask)
+    elif strategy == "last_token":
+        return last_token_activation(activations, mask)
+    else:
+        raise ValueError(f"Unknown pooling strategy: {strategy}")
+
+
 # ── Direction computation ────────────────────────────────────────────────────
 
 def compute_direction_mean_diff(
@@ -181,6 +229,40 @@ def compute_direction_logreg(
 
     w = torch.tensor(clf.coef_[0], dtype=en_acts.dtype)
     return w / w.norm()
+
+
+def compute_direction_pca(
+    en_acts: torch.Tensor, other_acts: torch.Tensor
+) -> torch.Tensor:
+    """
+    Compute English direction via PCA on paired differences (RepE/LAT standard).
+
+    For each paired sample i, compute diff[i] = en_acts[i] - other_acts[i],
+    then take the first principal component of the differences matrix.
+
+    Args:
+        en_acts: [n, d_model] position-pooled English activations
+        other_acts: [n, d_model] position-pooled other-language activations
+            (must be paired: en_acts[i] and other_acts[i] are translations)
+
+    Returns:
+        Unit-normalized direction vector [d_model]
+    """
+    assert en_acts.shape[0] == other_acts.shape[0], (
+        "PCA on paired differences requires equal sample counts"
+    )
+    diffs = en_acts - other_acts  # [n, d_model]
+    diffs_centered = diffs - diffs.mean(dim=0)
+    # SVD to get first principal component
+    _, _, Vh = torch.linalg.svd(diffs_centered, full_matrices=False)
+    pc1 = Vh[0]  # [d_model]
+
+    # Sign convention: orient so PC points from Other toward English
+    mean_diff = diffs.mean(dim=0)
+    if pc1 @ mean_diff < 0:
+        pc1 = -pc1
+
+    return pc1 / pc1.norm()
 
 
 # ── Ablation hooks ───────────────────────────────────────────────────────────

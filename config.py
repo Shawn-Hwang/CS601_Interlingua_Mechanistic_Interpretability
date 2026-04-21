@@ -31,8 +31,9 @@ FLORES_CONFIGS: dict[str, str] = {
 FLORES_SPLIT: str = "dev"  # 997 sentences; devtest reserved for validation
 
 # ── Phase 1: Direction extraction ────────────────────────────────────────────
-N_SAMPLES_DIRECTION: int = 200       # number of sentence pairs to use
+N_SAMPLES_DIRECTION: int = 500       # number of sentence pairs to use (FLORES dev has 997)
 BATCH_SIZE: int = 8                  # batch size for activation extraction
+POOLING_STRATEGY: str = "mean"       # "mean" or "last_token"
 
 # ── Phase 2: Reasoning dataset ───────────────────────────────────────────────
 N_EXAMPLES_PER_TASK: int = 50
@@ -42,7 +43,7 @@ MAX_NEW_TOKENS: int = 32             # max tokens to generate for evaluation
 
 # ── Phase 3: Ablation ───────────────────────────────────────────────────────
 N_RANDOM_DIRECTIONS: int = 10        # number of random control directions to average
-DIRECTION_METHOD: str = "mean_diff"  # primary method: "mean_diff" or "logreg"
+DIRECTION_METHOD: str = "mean_diff"  # primary method: "mean_diff", "logreg", or "pca"
 
 # ── Paths ────────────────────────────────────────────────────────────────────
 PROJECT_DIR: Path = Path(__file__).resolve().parent
